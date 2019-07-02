@@ -3,16 +3,23 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "prettier",
+    "prettier/@typescript-eslint"
   ],
   "env": {
-    "node": true
+    "node": true,
+    "es6": true
   },
   "rules": {
-    "@typescript-eslint/restrict-plus-operands": "error"
+    "@typescript-eslint/restrict-plus-operands": "error",
+    "@typescript-eslint/interface-name-prefix": 0,
+    "no-async-promise-executor": 1,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/indent": 0
   }
 }
