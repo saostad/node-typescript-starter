@@ -25,9 +25,7 @@
     "dotenv": "^8.0.0",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
-    "ts-node": "^8.3.0"
-  },
-  "dependencies": {
+    "ts-node": "^8.3.0",
     "@types/dotenv": "^6.1.1",
     "@types/inquirer": "^6.0.3",
     "@types/node": "^12.6.8",
@@ -37,5 +35,6 @@
     "nodemon": "^1.19.1",
     "prettier": "1.18.2",
     "typescript": "^3.5.3"
-  }
+  },
+  "dependencies": {}
 }
