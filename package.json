@@ -9,7 +9,7 @@
     "ts-node": "ts-node src/app.ts",
     "commands": "npm run lint && npm run format && npm run ts-node",
     "monitor": "nodemon --watch src -e ts --exec \"npm run commands\"",
-    "start": "npm run monitor"
+    "start": "nodemon --watch src -e ts --exec \"npm run ts-node\""
   },
   "keywords": [],
   "author": "",
@@ -22,18 +22,17 @@
     "delay": "1000"
   },
   "devDependencies": {
-    "dotenv": "^8.0.0",
-    "eslint": "^6.0.1",
-    "eslint-config-prettier": "^6.0.0",
-    "ts-node": "^8.3.0",
     "@types/dotenv": "^6.1.1",
-    "@types/inquirer": "^6.0.3",
     "@types/node": "^12.6.8",
     "@typescript-eslint/eslint-plugin": "^1.12.0",
     "@typescript-eslint/parser": "^1.12.0",
+    "dotenv": "^8.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "nodemon": "^1.19.1",
     "prettier": "1.18.2",
+    "ts-node": "^8.3.0",
     "typescript": "^3.5.3"
   },
   "dependencies": {}
