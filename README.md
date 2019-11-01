@@ -1,6 +1,8 @@
 # node-typescript-starter
 
-Just clone the repository
+# How to use
+
+`git clone https://github.com/saostad/node-typescript-starter.git YOUR_PROJECT_NAME`
 
 `npm install`
 
