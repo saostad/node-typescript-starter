@@ -1,8 +1,8 @@
 {
   "name": "node-ts-starter",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "",
-  "main": "./src/app.ts",
+  "main": "./dist/app.js",
   "scripts": {
     "format": "prettier --check \"src/**/*.ts\" --write",
     "lint": "eslint --ext \".ts,.js\" src --quiet",
