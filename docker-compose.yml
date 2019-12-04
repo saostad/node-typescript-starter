@@ -1,0 +1,33 @@
+version: "3.1"
+
+services:
+  node_server:
+    container_name: node_server
+    image: node:13.2.0
+    user: "node"
+    restart: unless-stopped
+    working_dir: /home/node/app
+    environment:
+      NODE_ENV: development
+      VIRTUAL_HOST: DOMAIN_NAME_HERE
+      CERT_NAME: CERT_NAME_HERE
+    volumes:
+      - ./:/home/node/app
+
+    # uncomment this part if you wanna run it behind a reverse proxy like nginx
+    # expose:
+    #   - "4002"
+
+    # use this part if it runs directly without reverse proxy
+    # ports:
+    #   - "4002:4002"
+    #
+    command: "npm start"
+    # command: "npm run ts-node"
+    # command: "npm install"
+    #
+# uncomment below lines just in production
+# networks:
+#   default:
+#     external:
+#       name: nginx-proxy

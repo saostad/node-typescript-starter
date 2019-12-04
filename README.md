@@ -17,6 +17,7 @@
 - to format with prettier: `npm run format`
 - to lint with eslint: `npm run lint`
 - to run in production: `npm run ts-node`
+- to run in docker environment in `docker-compose up`
 
 ## Functionalities
 
@@ -24,6 +25,7 @@
 - pre-configured to publish or create module
 - pre-configured to run tests with jest
 - pre-configured to load environment variables from .env file
+- pre-configured to run in docker environment
 - type-def for process.env variables
 - restart the process after modifying ts files
 
@@ -35,3 +37,4 @@
 - [x] eslint
 - [x] nodemon
 - [x] prettier
+- [x] docker
