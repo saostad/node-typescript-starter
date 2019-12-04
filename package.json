@@ -14,7 +14,8 @@
     "commands": "npm run lint && npm run format && npm run ts-node",
     "monitor": "nodemon --watch src -e ts --exec \"npm run commands\"",
     "prepublish": "tsc",
-    "start": "nodemon -L --watch src -e ts --exec \"npm run ts-node\"",
+    "start": "nodemon --watch src -e ts --exec \"npm run ts-node\"",
+    "start:docker": "nodemon -L --watch src -e ts --exec \"npm run ts-node\"",
     "test": "jest",
     "test:watch": "jest --watch"
   },
