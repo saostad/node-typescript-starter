@@ -1,7 +1,11 @@
 {
   "name": "node-ts-starter",
   "version": "0.4.0",
-  "description": "",
+  "description": "typescript opinionated starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saostad/node-typescript-starter.git"
+  },
   "main": "./dist/app.js",
   "scripts": {
     "format": "prettier --check \"src/**/*.ts\" --write",
