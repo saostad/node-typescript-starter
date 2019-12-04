@@ -6,7 +6,8 @@
     "type": "git",
     "url": "https://github.com/saostad/node-typescript-starter.git"
   },
-  "main": "./dist/app.js",
+  "main": "dist/app.js",
+  "types": "dist/app.d.ts",
   "scripts": {
     "format": "prettier --check \"src/**/*.ts\" --write",
     "lint": "eslint --ext \".ts,.js\" src --quiet",
