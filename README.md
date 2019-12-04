@@ -1,10 +1,14 @@
 # node-typescript-starter
 
-## A very simplified combination of my favorite tools for starting a node project
+## An opinionated combination of my favorite tools for starting a node project
 
 # Quick Start
 
-`git clone https://github.com/saostad/node-typescript-starter.git YOUR_PROJECT_NAME`
+`npm init ts-starter` (NOT WORKING YET)
+
+OR
+
+`git clone https://github.com/saostad/node-typescript-starter.git PROJECT_NAME`
 
 `npm install`
 

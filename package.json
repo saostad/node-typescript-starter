@@ -1,6 +1,6 @@
 {
-  "name": "node-ts-starter",
-  "version": "0.5.1",
+  "name": "create-ts-starter",
+  "version": "0.5.2",
   "description": "typescript opinionated starter",
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
     "start": "nodemon --watch src -e ts --exec \"npm run ts-node\"",
     "start:docker": "nodemon -L --watch src -e ts --exec \"npm run ts-node\"",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "create-ts-starter": "npm i"
   },
   "keywords": [
     "node",
