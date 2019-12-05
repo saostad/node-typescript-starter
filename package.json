@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "0.5.2",
+  "version": "1.0.0",
   "description": "typescript opinionated starter",
   "repository": {
     "type": "git",
@@ -8,6 +8,7 @@
   },
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
+  "bin": "./setup.js",
   "scripts": {
     "format": "prettier --check \"src/**/*.ts\" --write",
     "lint": "eslint --ext \".ts,.js\" src --quiet",
@@ -18,8 +19,7 @@
     "start": "nodemon --watch src -e ts --exec \"npm run ts-node\"",
     "start:docker": "nodemon -L --watch src -e ts --exec \"npm run ts-node\"",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "create-ts-starter": "npm i"
+    "test:watch": "jest --watch"
   },
   "keywords": [
     "node",

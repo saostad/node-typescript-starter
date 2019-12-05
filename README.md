@@ -4,7 +4,9 @@
 
 # Quick Start
 
-`npm init ts-starter` (NOT WORKING YET)
+`npm init ts-starter PROJECT_NAME VSCode`
+
+### notice: you can ignore last param VSCode and open the project in your favorite editor
 
 OR
 
