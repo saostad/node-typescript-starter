@@ -1,16 +1,16 @@
-# node-typescript-starter
+# node typescript starter
 
-## An opinionated combination of my favorite tools for starting a node project
+### An opinionated combination of my favorite tools for starting a node project
 
 # Quick Start
 
 `npm init ts-starter PROJECT_NAME VSCode`
 
-### notice: you can ignore last param VSCode and open the project in your favorite editor
+### notice: you can ignore last param VSCode and open the project in your favorite editor manually!
 
 OR
 
-`git clone https://github.com/saostad/node-typescript-starter.git PROJECT_NAME`
+`git clone --depth 1 https://github.com/saostad/node-typescript-starter.git PROJECT_NAME`
 
 `npm install`
 
@@ -32,6 +32,7 @@ OR
 - pre-configured to run tests with jest
 - pre-configured to load environment variables from .env file
 - pre-configured to run in docker environment
+- pre-configured to log in logs in root folder with default log rotation
 - type-def for process.env variables
 - restart the process after modifying ts files
 
@@ -44,3 +45,4 @@ OR
 - [x] nodemon
 - [x] prettier
 - [x] docker
+- [x] fast-node-logger [powered by pino](https://github.com/pinojs/pino)

@@ -53,11 +53,11 @@ async function setup() {
     await runShellCmd(`npx rimraf ./.git`);
     console.log(`old .git folder deleted successfully!`);
 
-    await runShellCmd(`git init`);
+    await runShellCmd(`git init && git add . && git commit -am "init commit"`);
     console.log(`new git repo initialized successfully!`);
 
     if (runVsCode) {
-      console.log(`running vscode...`);
+      console.log(`starting vscode...`);
       runShellCmd(`code ${folderPath}`);
     }
   } catch (error) {

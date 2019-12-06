@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "typescript opinionated starter",
   "repository": {
     "type": "git",
@@ -52,5 +52,7 @@
     "ts-node": "^8.5.4",
     "typescript": "^3.7.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fast-node-logger": "^0.1.5"
+  }
 }
