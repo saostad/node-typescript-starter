@@ -22,7 +22,7 @@ services:
     # ports:
     #   - "4002:4002"
     #
-    command: "npm start:docker"
+    command: "npm run start:docker"
     # command: "npm run ts-node"
     # command: "npm install"
     #
