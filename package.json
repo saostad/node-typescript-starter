@@ -13,13 +13,11 @@
     "format": "prettier --check \"src/**/*.ts\" --write",
     "lint": "eslint --ext \".ts,.js\" src --quiet",
     "ts-node": "ts-node src/app.ts",
-    "commands": "npm run lint && npm run format && npm run ts-node",
-    "monitor": "nodemon --watch src -e ts --exec \"npm run commands\"",
     "prepublish": "tsc",
-    "start": "nodemon --watch src -e ts --exec \"npm run ts-node\"",
-    "start:docker": "nodemon -L --watch src -e ts --exec \"npm run ts-node\"",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "start:docker": "nodemon -L --watch src -e ts --exec \"npm run ts-node\"",
+    "start": "nodemon --watch src -e ts --exec \"npm run ts-node\""
   },
   "keywords": [
     "node",
