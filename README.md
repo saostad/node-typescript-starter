@@ -46,3 +46,7 @@ OR
 - [x] prettier
 - [x] docker
 - [x] fast-node-logger [powered by pino](https://github.com/pinojs/pino)
+
+## TODO:
+
+- performance improvement be adding ts-node-dev or compile with tsc and run with nodemon
