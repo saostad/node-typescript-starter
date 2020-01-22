@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Typescript Opinionated Starter/Boilerplate",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
-  "bin": "bin/setup.js",
+  "bin": "bin/setup",
   "scripts": {
     "format": "prettier --check \"src/**/*.ts\" --write",
     "lint": "eslint --ext \".ts,.js\" src --quiet",
