@@ -22,7 +22,7 @@ OR
 - to run tests in watch mode: `npm run test:watch`
 - to format with prettier: `npm run format`
 - to lint with eslint: `npm run lint`
-- to run in production: `npm run ts-node`
+- to run in production: `npm run prod`
 - to run in docker environment in `docker-compose up`
 
 ## Functionalities
@@ -39,14 +39,10 @@ OR
 ## Powered By:
 
 - [x] typescript
-- [x] ts-node
+- [x] fast-node-logger [powered by pino](https://github.com/pinojs/pino)
 - [x] jest
 - [x] eslint
-- [x] nodemon
 - [x] prettier
+- [x] npm-run-all
+- [x] nodemon
 - [x] docker
-- [x] fast-node-logger [powered by pino](https://github.com/pinojs/pino)
-
-## TODO:
-
-- performance improvement be adding ts-node-dev or compile with tsc and run with nodemon

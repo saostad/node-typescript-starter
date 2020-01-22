@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Typescript Opinionated Starter/Boilerplate",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
-  "bin": "./setup.js",
+  "bin": "bin/setup.js",
   "scripts": {
     "format": "prettier --check \"src/**/*.ts\" --write",
     "lint": "eslint --ext \".ts,.js\" src --quiet",
@@ -17,8 +17,9 @@
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",
     "prepublishOnly": "npm run tsc",
-    "dev": "nodemon --watch dist --exec \"node dist/app.js\"",
-    "dev:docker": "nodemon -L --watch dist --exec \"node dist/app.js\"",
+    "prod": "node dist/app.js",
+    "dev": "nodemon --watch dist --exec \"npm run prod\"",
+    "dev:docker": "nodemon -L --watch dist --exec \"npm run prod\"",
     "start": "npm-run-all -p dev tsc:watch"
   },
   "keywords": [
