@@ -1,7 +1,7 @@
 {
   "name": "create-ts-starter",
-  "version": "1.1.4",
-  "description": "typescript opinionated starter",
+  "version": "2.0.0",
+  "description": "Typescript Opinionated Starter/Boilerplate",
   "repository": {
     "type": "git",
     "url": "https://github.com/saostad/node-typescript-starter.git"
@@ -12,12 +12,14 @@
   "scripts": {
     "format": "prettier --check \"src/**/*.ts\" --write",
     "lint": "eslint --ext \".ts,.js\" src --quiet",
-    "ts-node": "ts-node src/app.ts",
-    "prepublishOnly": "tsc",
     "test": "jest",
     "test:watch": "jest --watch",
-    "start:docker": "nodemon -L --watch src -e ts --exec \"npm run ts-node\"",
-    "start": "nodemon --watch src -e ts --exec \"npm run ts-node\""
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "prepublishOnly": "npm run tsc",
+    "dev": "nodemon --watch dist --exec \"node dist/app.js\"",
+    "dev:docker": "nodemon -L --watch dist --exec \"node dist/app.js\"",
+    "start": "npm-run-all -p dev tsc:watch"
   },
   "keywords": [
     "node",
@@ -43,8 +45,9 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "jest": "^24.9.0",
+    "jest": "^25.1.0",
     "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1",
     "ts-jest": "^24.3.0",
     "ts-node": "^8.6.2",

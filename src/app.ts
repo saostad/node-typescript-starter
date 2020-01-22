@@ -9,7 +9,7 @@ export async function main() {
   /** put your code below here */
 
   writeLog("logger started!", { stdout: true });
-  writeLog(`here is my secret: ${process.env.MY_SECRET}`);
+  writeLog(`here is my secret: ${process.env.MY_SECRET}`, { stdout: true });
   return process.env.MY_SECRET;
 }
 
