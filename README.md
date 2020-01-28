@@ -50,3 +50,7 @@ OR
 - [x] npm-run-all
 - [x] nodemon
 - [x] docker
+
+## TODO:
+
+- [ ] add error handling [best practices](https://www.youtube.com/watch?v=62ZRPJkHOX0&list=WL&index=10&t=0s)
