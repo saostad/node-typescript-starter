@@ -54,3 +54,6 @@ OR
 ## TODO:
 
 - [ ] add error handling [best practices](https://www.youtube.com/watch?v=62ZRPJkHOX0&list=WL&index=10&t=0s)
+- [ ] add pm2 for process monitoring in development
+- [ ] add docker restart policy in make sure it restart in production
+- [ ] remove all startup overhead to have fastest start up
