@@ -12,9 +12,8 @@ function terminate({ coreDump, timeout, server }) {
         /** Try to graceful shutdown */
         server === null || server === void 0 ? void 0 : server.close(exit);
         if (timeout) {
-            // TODO: this seams a bug in @types/node
-            // @ts-ignore
-            setTimeout(exit, timeout).unref();
+            const timer = setTimeout(exit, timeout);
+            timer.unref();
         }
         else {
             exit(code);

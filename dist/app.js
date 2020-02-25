@@ -13,23 +13,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
 const fast_node_logger_1 = require("fast-node-logger");
 const terminate_1 = require("./helpers/terminate");
-dotenv_1.default.config();
-// process.on("uncaughtException", err => {
-//   writeLog([`Uncaught Exception: ${err.message}`, err], {
-//     level: "fatal",
-//     stdout: true,
-//   });
-//   process.exit(1);
-// });
-// process.on("unhandledRejection", (reason, promise) => {
-//   writeLog([`Unhandled rejection at:`, promise, `reason: ${reason}`], {
-//     level: "fatal",
-//     stdout: true,
-//   });
-//   process.exit(1);
-// });
 const exitHandler = terminate_1.terminate({ coreDump: false, timeout: 0 });
 process.on("uncaughtException", exitHandler(1, "Unexpected Error"));
 process.on("unhandledRejection", exitHandler(1, "Unhandled Promise"));
@@ -37,11 +23,10 @@ process.on("SIGTERM", exitHandler(0, "SIGTERM"));
 process.on("SIGINT", exitHandler(0, "SIGINT"));
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        yield fast_node_logger_1.createLogger();
+        yield fast_node_logger_1.createLogger({ prettyPrint: { colorize: true } });
         /** put your code below here */
         fast_node_logger_1.writeLog("logger started!", { stdout: true, level: "trace" });
         fast_node_logger_1.writeLog(`here is my secret: ${process.env.MY_SECRET}`, { stdout: true });
-        throw "dhdhdhgd@@@@@@@@@@@@@@@";
         return process.env.MY_SECRET;
     });
 }
