@@ -5,13 +5,12 @@ function terminate({ coreDump, timeout, server }) {
         coreDump ? process.abort() : process.exit(code);
     };
     return (code, reason) => (err, promise) => {
-        var _a;
         console.error(`Process exiting with code: ${code}, reason: ${reason}`, promise);
         if (err && err instanceof Error) {
             console.error(err.message);
         }
         /** Try to graceful shutdown */
-        (_a = server) === null || _a === void 0 ? void 0 : _a.close(exit);
+        server === null || server === void 0 ? void 0 : server.close(exit);
         if (timeout) {
             // TODO: this seams a bug in @types/node
             // @ts-ignore
