@@ -31,6 +31,7 @@ OR
 
 ## Functionalities
 
+- dies at unhandled errors (this is very good strategy for production - docker will take care of restart the program after exit)
 - pre-configured for work with VSCode debugger
 - pre-configured to publish or create module
 - pre-configured to run tests with jest
