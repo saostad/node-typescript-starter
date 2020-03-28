@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "Typescript Opinionated Starter/Boilerplate",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",
     "prepublishOnly": "npm run tsc",
-    "prod": "node --unhandled-rejections=strict dist/app.js",
+    "prod": "node --unhandled-rejections=strict dist/src/app.js",
     "dev": "nodemon --watch dist --exec \"npm run prod\"",
     "start": "npm-run-all -p dev tsc:watch"
   },
