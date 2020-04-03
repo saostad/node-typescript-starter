@@ -35,7 +35,7 @@ async function runShellCmd(command) {
     console.log(stdout);
     console.log(stderr);
   } catch {
-    err => {
+    (err) => {
       console.error(err);
     };
   }
@@ -55,6 +55,11 @@ async function setup() {
 
     await runShellCmd(`git init && git add . && git commit -am "init commit"`);
     console.log(`new git repo initialized successfully!`);
+
+    console.log(`type command below to start hacking:`);
+
+    console.log(`cd ${folderName}`);
+    console.log(`npm start`);
 
     if (runVsCode) {
       console.log(`starting vscode...`);
