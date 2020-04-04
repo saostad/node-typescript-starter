@@ -54,13 +54,13 @@ async function setup() {
     await runShellCmd(`npx rimraf ./.git`);
     console.log(`old .git folder deleted successfully!`);
 
-    fs.appendFileSync(".gitignore", "dist/", "utf8");
+    fs.appendFileSync(".gitignore", "dist", "utf8");
 
     await runShellCmd(`git init && git add . && git commit -am "init commit"`);
     console.log(`new git repo initialized successfully!`);
 
+    console.log();
     console.log(`type command below to start hacking:`);
-
     console.log();
     console.log(`cd ${folderName}`);
     console.log();
