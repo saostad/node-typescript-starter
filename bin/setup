@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const util = require("util");
 const path = require("path");
+const fs = require("fs");
 
 /** Steps:
  * 1- create folder
@@ -60,8 +61,11 @@ async function setup() {
 
     console.log(`type command below to start hacking:`);
 
+    console.log();
     console.log(`cd ${folderName}`);
+    console.log();
     console.log(`npm start`);
+    console.log();
 
     if (runVsCode) {
       console.log(`starting vscode...`);
