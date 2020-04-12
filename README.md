@@ -26,6 +26,7 @@ OR
 - to run tests in watch mode: `npm run test:watch`
 - to format with prettier: `npm run format`
 - to lint with eslint: `npm run lint`
+- to generate documentations website: `npm run gen-docs`
 - to run in production: `npm run prod`
 - to run in docker environment in `docker-compose up`
 
@@ -38,19 +39,21 @@ OR
 - pre-configured to load environment variables from .env file
 - pre-configured to run in docker environment
 - pre-configured to log in logs in root folder with default log rotation
+- pre-configured to generate api documentations in `docs` folder of root project directory
 - type-def for process.env variables
 - restart the process after modifying ts files
 
 ## Powered By:
 
-- [x] typescript
-- [x] fast-node-logger [powered by pino](https://github.com/pinojs/pino)
-- [x] jest
-- [x] eslint
-- [x] prettier
-- [x] npm-run-all
-- [x] nodemon
-- [x] docker
+- [x] [typescript](https://github.com/Microsoft/TypeScript)
+- [x] [fast-node-logger](https://github.com/saostad/fast-node-logger)
+- [x] [jest](https://github.com/facebook/jest)
+- [x] [eslint](https://github.com/eslint/eslint)
+- [x] [prettier](https://github.com/prettier/prettier)
+- [x] [TypeDoc](https://github.com/TypeStrong/TypeDoc)
+- [x] [npm-run-all](https://github.com/mysticatea/npm-run-all)
+- [x] [nodemon](https://github.com/remy/nodemon)
+- [x] [Docker](https://www.docker.com/)
 
 ## TODO:
 
