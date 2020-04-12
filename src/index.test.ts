@@ -1,4 +1,4 @@
-import { main } from "./app";
+import { main } from "./index";
 
 test("process.env", async () => {
   const result = await main();
