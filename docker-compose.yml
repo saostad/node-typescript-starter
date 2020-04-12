@@ -3,13 +3,15 @@ version: "2.4"
 services:
   node_server:
     container_name: node_server
-    image: node:12.16.1
+    image: node:12.16.2
     user: "node"
     restart: unless-stopped
     working_dir: /home/node/app
     environment:
       NODE_ENV: development
+      # use this if you are using https://hub.docker.com/r/jwilder/nginx-proxy/
       VIRTUAL_HOST: DOMAIN_NAME_HERE
+      # use this if you are using https://hub.docker.com/r/jwilder/nginx-proxy/
       CERT_NAME: CERT_NAME_HERE
     volumes:
       - ./:/home/node/app
