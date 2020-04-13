@@ -24,5 +24,5 @@ export async function main() {
 }
 
 main().catch((err: Error) => {
-  writeLog(err, { level: "error" });
+  writeLog(err, { level: "error", stdout: true });
 });
