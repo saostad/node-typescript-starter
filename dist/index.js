@@ -23,6 +23,6 @@ async function main() {
 }
 exports.main = main;
 main().catch((err) => {
-    fast_node_logger_1.writeLog(err, { level: "error" });
+    fast_node_logger_1.writeLog(err, { level: "error", stdout: true });
 });
 //# sourceMappingURL=index.js.map
