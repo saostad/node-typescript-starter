@@ -62,3 +62,4 @@ OR
 - [ ] add docker restart policy in make sure it restart in production
 - [ ] remove all startup overhead to have fastest start up
 - [ ] top-level await support (waiting for typescript to support it in CJS modules)
+- [ ] add changelog.md generator for pre-publish script

@@ -2,6 +2,8 @@
 .env
 *.log
 docs
-
-src/app.ts
-dist/app.js
+generated
+/src
+dist/src/app.js
+dist/src/app.js.map
+dist/src/app.d.ts
