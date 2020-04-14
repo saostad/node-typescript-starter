@@ -2,3 +2,6 @@
 .env
 *.log
 docs
+
+src/app.ts
+dist/app.js

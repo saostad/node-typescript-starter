@@ -55,17 +55,22 @@ async function setup() {
     console.log(`old .git folder deleted successfully!`);
 
     fs.appendFileSync(".gitignore", "\r\ndist", "utf8");
+    fs.appendFileSync(".gitignore", "\r\n.env", "utf8");
+
+    /** remove bin folder from disk. we don't need it anymore */
+    fs.unlinkSync(path.join(process.cwd(), "bin", "setup"));
+    fs.rmdirSync(path.join(process.cwd(), "bin"));
 
     await runShellCmd(`git init && git add . && git commit -am "init commit"`);
     console.log(`new git repo initialized successfully!`);
 
-    console.log();
-    console.log(`type command below to start hacking:`);
+    console.log(`Commands to run the project:`);
     console.log();
     console.log(`cd ${folderName}`);
     console.log();
     console.log(`npm start`);
     console.log();
+    console.log(`Happy Hacking!`);
 
     if (runVsCode) {
       console.log(`starting vscode...`);
