@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "Typescript Opinionated Starter / Boilerplate",
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
     "format": "prettier --check \"src/**/*.ts\" --write",
     "lint": "eslint --ext \".ts,.js\" src --quiet",
     "gen-docs": "typedoc",
+    "postgen-docs": "node ./github/github.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "tsc": "tsc",
