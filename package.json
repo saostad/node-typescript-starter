@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.2.0",
+  "version": "2.3.0-beta1",
   "description": "Typescript Opinionated Starter / Boilerplate",
   "repository": {
     "type": "git",
@@ -14,11 +14,13 @@
     "lint": "eslint --ext \".ts,.js\" src --quiet",
     "gen-docs": "typedoc",
     "postgen-docs": "node ./github/github.js",
+    "tag": "node ./config/tag.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",
-    "prepublishOnly": "npm run tsc && npm run gen-docs",
+    "prepublishOnly": "npm-run-all -s tsc gen-docs",
+    "postpublish": "npm-run-all -s tag",
     "prod": "node --unhandled-rejections=strict dist/app.js",
     "inspect": "node --inspect --unhandled-rejections=strict dist/app.js",
     "dev": "nodemon --watch dist --exec \"npm run inspect\"",
