@@ -53,6 +53,7 @@ OR
 - [x] [eslint](https://github.com/eslint/eslint)
 - [x] [prettier](https://github.com/prettier/prettier)
 - [x] [TypeDoc](https://github.com/TypeStrong/TypeDoc)
+- [x] [auto-changelog](https://www.npmjs.com/package/auto-changelog)
 - [x] [npm-run-all](https://github.com/mysticatea/npm-run-all)
 - [x] [nodemon](https://github.com/remy/nodemon)
 - [x] [Docker](https://www.docker.com/)
