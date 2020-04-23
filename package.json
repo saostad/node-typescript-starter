@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.3.3-beta1",
+  "version": "2.3.3-beta2",
   "description": "Typescript Opinionated Starter / Boilerplate",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "gen-docs": "typedoc",
     "postgen-docs": "node ./github/github.js",
     "tag": "node ./config/tag.js",
-    "gen-changelog": "auto-changelog && git -a CHANGELOG.md -m \"doc: change log\"",
+    "gen-changelog": "auto-changelog && git commit -a CHANGELOG.md -m \"doc: change log\"",
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",
     "prepublishOnly": "npm-run-all -s tsc gen-docs",
