@@ -3,7 +3,7 @@
 *.log
 docs
 generated
-/src
+/src/**/*.*
 dist/src/app.js
 dist/src/app.js.map
 dist/src/app.d.ts

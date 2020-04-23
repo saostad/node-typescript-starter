@@ -32,7 +32,6 @@ OR
 
 ## Functionalities
 
-- dies at unhandled errors (this is very good strategy for production - docker will take care of restart the program after exit)
 - pre-configured for work with VSCode debugger
 - pre-configured to publish or create module
 - pre-configured to run tests with jest
@@ -40,8 +39,10 @@ OR
 - pre-configured to run in docker environment
 - pre-configured to log in logs in root folder with default log rotation
 - pre-configured to generate api documentations in `docs` folder of root project directory
-- type-def for process.env variables
+- pre-configured to connect Chrome DevTools in development environment
 - restart the process after modifying ts files
+- dies at unhandled errors (this is very good strategy for production - docker will take care of restart the program after exit)
+- type-def for process.env variables
 
 ## Powered By:
 
