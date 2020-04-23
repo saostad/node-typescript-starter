@@ -18,6 +18,6 @@ const version = require("../package.json").version;
 async function tag() {
   await runShellCmd(`git add .`);
   await runShellCmd(`git commit`);
-  await runShellCmd(`git tag ${version}`);
+  await runShellCmd(`git tag v${version}`);
 }
 tag();
