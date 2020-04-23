@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.3.0-beta2",
+  "version": "2.3.0-beta3",
   "description": "Typescript Opinionated Starter / Boilerplate",
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",
     "prepublishOnly": "npm-run-all -s tsc gen-docs",
+    "version": "auto-changelog",
     "postpublish": "npm-run-all -s tag",
     "prod": "node --unhandled-rejections=strict dist/app.js",
     "inspect": "node --inspect --unhandled-rejections=strict dist/app.js",
@@ -46,6 +47,7 @@
     "@types/node": "^13.13.2",
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "@typescript-eslint/parser": "^2.29.0",
+    "auto-changelog": "^2.0.0",
     "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
