@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Typescript Opinionated Starter / Boilerplate",
   "repository": {
     "type": "git",
@@ -12,20 +12,20 @@
   "scripts": {
     "format": "prettier --check \"src/**/*.ts\" --write",
     "lint": "eslint --ext \".ts,.js\" src --quiet",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "gen-docs": "typedoc",
     "postgen-docs": "node ./github/github.js",
     "tag": "node ./config/tag.js",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "gen-changelog": "auto-changelog -p && git add CHANGELOG.md",
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",
     "prepublishOnly": "npm-run-all -s tsc gen-docs",
-    "version": "auto-changelog",
-    "postpublish": "npm-run-all -s tag",
-    "prod": "node --unhandled-rejections=strict dist/app.js",
-    "inspect": "node --inspect --unhandled-rejections=strict dist/app.js",
+    "postpublish": "npm-run-all -s tag gen-changelog",
+    "prod": "node --unhandled-rejections=strict dist/index.js",
+    "inspect": "node --inspect --unhandled-rejections=strict dist/index.js",
     "dev": "nodemon --watch dist --exec \"npm run inspect\"",
-    "start": "npm-run-all -p dev tsc:watch"
+    "start": "npm-run-all -p tsc:watch dev"
   },
   "keywords": [
     "node",
