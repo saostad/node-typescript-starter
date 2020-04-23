@@ -32,8 +32,9 @@ OR
 
 ## Functionalities
 
-- pre-configured for work with VSCode debugger
 - pre-configured to publish or create module
+- pre-configured to tag the commit at publish time
+- pre-configured to generate changelog.md file after each publish
 - pre-configured to run tests with jest
 - pre-configured to load environment variables from .env file
 - pre-configured to run in docker environment

@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.3.3-beta3",
+  "version": "2.3.3",
   "description": "Typescript Opinionated Starter / Boilerplate",
   "repository": {
     "type": "git",
