@@ -21,6 +21,7 @@
     "no-async-promise-executor": 1,
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/indent": 0,
-    "no-console": "warn"
+    "no-console": "warn",
+    "no-shadow": 1
   }
 }
