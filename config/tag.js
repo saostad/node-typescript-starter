@@ -6,10 +6,8 @@ async function runShellCmd(command) {
     const { stdout, stderr } = await exec(command);
     console.log(stdout);
     console.log(stderr);
-  } catch {
-    (err) => {
-      console.error(err);
-    };
+  } catch (err) {
+    console.error(err);
   }
 }
 
