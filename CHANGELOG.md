@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.3.7](https://github.com/saostad/node-typescript-starter/compare/v2.3.7-beta4...v2.3.7)
+
+> 15 June 2020
+
+- doc: change log [`01cfae6`](https://github.com/saostad/node-typescript-starter/commit/01cfae60ea5b378a864e6e177cc560015083ad7c)
+- doc: generated change hides credit [`d6948a8`](https://github.com/saostad/node-typescript-starter/commit/d6948a8b5b813e61a4ad00de0a4f49b4032ffec0)
+
 #### [v2.3.7-beta4](https://github.com/saostad/node-typescript-starter/compare/v2.3.7-beta2...v2.3.7-beta4)
 
 > 15 June 2020
