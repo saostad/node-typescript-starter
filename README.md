@@ -6,6 +6,8 @@
 
 `npx create-ts-starter PROJECT_NAME Vscode`
 
+![](quick-start.gif)
+
 OR
 
 `npm init ts-starter PROJECT_NAME VSCode`
