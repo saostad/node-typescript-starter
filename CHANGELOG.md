@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.3.9](https://github.com/saostad/node-typescript-starter/compare/v2.3.8...v2.3.9)
+
+> 14 July 2020
+
+- doc: added quick start gif [`b5fdc14`](https://github.com/saostad/node-typescript-starter/commit/b5fdc14af927fd12f84944ddea10531585efe1fd)
+- doc: change log [`a5d7b97`](https://github.com/saostad/node-typescript-starter/commit/a5d7b97861a195efc01e8f922d857cf01e3cdf68)
+
 #### [v2.3.8](https://github.com/saostad/node-typescript-starter/compare/v2.3.7...v2.3.8)
 
 > 10 July 2020
