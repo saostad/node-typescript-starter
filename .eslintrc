@@ -18,10 +18,10 @@
   "rules": {
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/interface-name-prefix": 0,
-    "no-async-promise-executor": 1,
+    "no-async-promise-executor": "warn",
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/indent": 0,
     "no-console": "warn",
-    "no-shadow": 1
+    "no-shadow": "warn"
   }
 }

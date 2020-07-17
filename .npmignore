@@ -4,3 +4,4 @@
 docs
 generated
 /src/**/*.*
+/compile/**

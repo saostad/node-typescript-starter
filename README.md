@@ -12,36 +12,31 @@ OR
 
 `npm init ts-starter PROJECT_NAME VSCode`
 
-### notice: you can ignore last param VSCode and open the project in your favorite editor manually!
+### notice: you can ignore last param 'VSCode' is you don't want to open the project in VSCode!
 
-OR
+## Commands
 
-`git clone --depth 1 https://github.com/saostad/node-typescript-starter.git PROJECT_NAME`
-
-`npm install`
-
-`npm start`
-
-## Other Commands
-
-- to run tests: `npm t`
-- to run tests in watch mode: `npm run test:watch`
-- to format with prettier: `npm run format`
-- to lint with eslint: `npm run lint`
-- to generate documentations website: `npm run gen-docs`
-- to run in production: `npm run prod`
-- to run in docker environment in `docker-compose up`
+- `npm start` to start the development environment
+- `npm t` to run tests
+- `npm run test:watch` to run tests in watch mode
+- `npm run format` to format with prettier
+- `npm run lint` to lint with eslint
+- `npm run gen-docs` to generate documentations website
+- `npm run prod` to run in production
+- `npm run compile` to compile to byte-code single executable file
+- `docker-compose up` to run in docker environment
 
 ## Functionalities
 
-- pre-configured to publish or create module
-- pre-configured to tag the commit at publish time
+- pre-configured to publish or create npm module
+- pre-configured to git tag the commit at publish time
 - pre-configured to generate changelog.md file after each publish
 - pre-configured to run tests with jest
 - pre-configured to load environment variables from .env file
 - pre-configured to run in docker environment
 - pre-configured to log in logs in root folder with default log rotation
 - pre-configured to generate api documentations in `docs` folder of root project directory
+- pre-configured to compile the app to byte-code executable single file
 - pre-configured to connect Chrome DevTools in development environment
 - restart the process after modifying ts files
 - dies at unhandled errors (this is very good strategy for production - docker will take care of restart the program after exit)
@@ -53,6 +48,7 @@ OR
 - [x] [fast-node-logger](https://github.com/saostad/fast-node-logger)
 - [x] [jest](https://github.com/facebook/jest)
 - [x] [eslint](https://github.com/eslint/eslint)
+- [x] [pkg](https://www.npmjs.com/package/pkg)
 - [x] [prettier](https://github.com/prettier/prettier)
 - [x] [TypeDoc](https://github.com/TypeStrong/TypeDoc)
 - [x] [auto-changelog](https://www.npmjs.com/package/auto-changelog)
@@ -64,7 +60,5 @@ OR
 
 - [ ] add error handling [best practices](https://www.youtube.com/watch?v=62ZRPJkHOX0&list=WL&index=10&t=0s)
 - [ ] add pm2 for process monitoring in development
-- [ ] add docker restart policy in make sure it restart in production
 - [ ] remove all startup overhead to have fastest start up
 - [ ] top-level await support (waiting for typescript to support it in CJS modules)
-- [ ] add changelog.md generator for pre-publish script

@@ -20,5 +20,5 @@ issues/
 test/fixtures/test*
 
 .idea
-
+compile
 out

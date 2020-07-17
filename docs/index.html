@@ -77,37 +77,36 @@
 				<p><img src="quick-start.gif" alt=""></p>
 				<p>OR</p>
 				<p><code>npm init ts-starter PROJECT_NAME VSCode</code></p>
-				<a href="#notice-you-can-ignore-last-param-vscode-and-open-the-project-in-your-favorite-editor-manually" id="notice-you-can-ignore-last-param-vscode-and-open-the-project-in-your-favorite-editor-manually" style="color: inherit; text-decoration: none;">
-					<h3>notice: you can ignore last param VSCode and open the project in your favorite editor manually!</h3>
+				<a href="#notice-you-can-ignore-last-param-39vscode39-is-you-don39t-want-to-open-the-project-in-vscode" id="notice-you-can-ignore-last-param-39vscode39-is-you-don39t-want-to-open-the-project-in-vscode" style="color: inherit; text-decoration: none;">
+					<h3>notice: you can ignore last param &#39;VSCode&#39; is you don&#39;t want to open the project in VSCode!</h3>
 				</a>
-				<p>OR</p>
-				<p><code>git clone --depth 1 https://github.com/saostad/node-typescript-starter.git PROJECT_NAME</code></p>
-				<p><code>npm install</code></p>
-				<p><code>npm start</code></p>
-				<a href="#other-commands" id="other-commands" style="color: inherit; text-decoration: none;">
-					<h2>Other Commands</h2>
+				<a href="#commands" id="commands" style="color: inherit; text-decoration: none;">
+					<h2>Commands</h2>
 				</a>
 				<ul>
-					<li>to run tests: <code>npm t</code></li>
-					<li>to run tests in watch mode: <code>npm run test:watch</code></li>
-					<li>to format with prettier: <code>npm run format</code></li>
-					<li>to lint with eslint: <code>npm run lint</code></li>
-					<li>to generate documentations website: <code>npm run gen-docs</code></li>
-					<li>to run in production: <code>npm run prod</code></li>
-					<li>to run in docker environment in <code>docker-compose up</code></li>
+					<li><code>npm start</code> to start the development environment</li>
+					<li><code>npm t</code> to run tests</li>
+					<li><code>npm run test:watch</code> to run tests in watch mode</li>
+					<li><code>npm run format</code> to format with prettier</li>
+					<li><code>npm run lint</code> to lint with eslint</li>
+					<li><code>npm run gen-docs</code> to generate documentations website</li>
+					<li><code>npm run prod</code> to run in production</li>
+					<li><code>npm run compile</code> to compile to byte-code single executable file</li>
+					<li><code>docker-compose up</code> to run in docker environment</li>
 				</ul>
 				<a href="#functionalities" id="functionalities" style="color: inherit; text-decoration: none;">
 					<h2>Functionalities</h2>
 				</a>
 				<ul>
-					<li>pre-configured to publish or create module</li>
-					<li>pre-configured to tag the commit at publish time</li>
+					<li>pre-configured to publish or create npm module</li>
+					<li>pre-configured to git tag the commit at publish time</li>
 					<li>pre-configured to generate changelog.md file after each publish</li>
 					<li>pre-configured to run tests with jest</li>
 					<li>pre-configured to load environment variables from .env file</li>
 					<li>pre-configured to run in docker environment</li>
 					<li>pre-configured to log in logs in root folder with default log rotation</li>
 					<li>pre-configured to generate api documentations in <code>docs</code> folder of root project directory</li>
+					<li>pre-configured to compile the app to byte-code executable single file</li>
 					<li>pre-configured to connect Chrome DevTools in development environment</li>
 					<li>restart the process after modifying ts files</li>
 					<li>dies at unhandled errors (this is very good strategy for production - docker will take care of restart the program after exit)</li>
@@ -121,6 +120,7 @@
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/saostad/fast-node-logger">fast-node-logger</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/facebook/jest">jest</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/eslint/eslint">eslint</a></li>
+					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/pkg">pkg</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/prettier/prettier">prettier</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/TypeStrong/TypeDoc">TypeDoc</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/auto-changelog">auto-changelog</a></li>
@@ -134,10 +134,8 @@
 				<ul>
 					<li><input disabled="" type="checkbox"> add error handling <a href="https://www.youtube.com/watch?v=62ZRPJkHOX0&amp;list=WL&amp;index=10&amp;t=0s">best practices</a></li>
 					<li><input disabled="" type="checkbox"> add pm2 for process monitoring in development</li>
-					<li><input disabled="" type="checkbox"> add docker restart policy in make sure it restart in production</li>
 					<li><input disabled="" type="checkbox"> remove all startup overhead to have fastest start up</li>
 					<li><input disabled="" type="checkbox"> top-level await support (waiting for typescript to support it in CJS modules)</li>
-					<li><input disabled="" type="checkbox"> add changelog.md generator for pre-publish script</li>
 				</ul>
 			</div>
 		</div>
