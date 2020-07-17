@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.4.0](https://github.com/saostad/node-typescript-starter/compare/v2.3.9...v2.4.0)
+
+> 17 July 2020
+
+- feat: added compile to byte-code configs [`22ca80b`](https://github.com/saostad/node-typescript-starter/commit/22ca80b4dc1374a744c72cac8b6912c564b63994)
+- doc: change log [`f4aa137`](https://github.com/saostad/node-typescript-starter/commit/f4aa1370bebbec5350529313f4256328a16ad898)
+
 #### [v2.3.9](https://github.com/saostad/node-typescript-starter/compare/v2.3.8...v2.3.9)
 
 > 14 July 2020
