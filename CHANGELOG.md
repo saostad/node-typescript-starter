@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.4.1](https://github.com/saostad/node-typescript-starter/compare/v2.4.0...v2.4.1)
+
+> 17 August 2020
+
+- enhance: enabled typescript increamental compiling [`cffaebf`](https://github.com/saostad/node-typescript-starter/commit/cffaebf61dff99b8f74ea0e498cd5a52f47188f3)
+- doc: change log [`37b5a91`](https://github.com/saostad/node-typescript-starter/commit/37b5a9123cf31827ae61388b1fa3e38b7b3f44a0)
+
 #### [v2.4.0](https://github.com/saostad/node-typescript-starter/compare/v2.3.9...v2.4.0)
 
 > 17 July 2020
