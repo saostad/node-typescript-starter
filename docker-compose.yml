@@ -3,7 +3,7 @@ version: "2.4"
 services:
   node_server:
     container_name: node_server
-    image: node:12.16.2
+    image: node:12.18.3
     user: "node"
     restart: unless-stopped
     working_dir: /home/node/app
@@ -22,7 +22,7 @@ services:
     # ports:
     #   - "4002:4002"
     #
-    command: "npm run prod"
+    command: "node --unhandled-rejections=strict dist/index.js"
     # command: "npm install"
     #
 # uncomment below lines just in production
