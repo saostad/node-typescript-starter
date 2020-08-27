@@ -62,3 +62,4 @@ OR
 - [ ] add pm2 for process monitoring in development
 - [ ] remove all startup overhead to have fastest start up
 - [ ] top-level await support (waiting for typescript to support it in CJS modules)
+- [ ] [docker best practices](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4)
