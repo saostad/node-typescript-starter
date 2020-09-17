@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.4.4](https://github.com/saostad/node-typescript-starter/compare/v2.4.3...v2.4.4)
+
+> 17 September 2020
+
+- refactor: npm scripts [`5af4bfe`](https://github.com/saostad/node-typescript-starter/commit/5af4bfee7a6e946a162d603abd4d2cdb65638044)
+- doc: change log [`03532df`](https://github.com/saostad/node-typescript-starter/commit/03532dffc36a249df8c3cf21f13ef1ba3ffbd182)
+
 #### [v2.4.3](https://github.com/saostad/node-typescript-starter/compare/v2.4.2...v2.4.3)
 
 > 27 August 2020
