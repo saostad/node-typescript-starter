@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "description": "Typescript Opinionated Starter / Boilerplate for Node.js projects",
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "precompile": "tsc",
     "compile": "pkg ./dist/index.js --out-path ./compile --options max_old_space_size=4096",
     "inspect": "node --inspect --unhandled-rejections=strict dist/index.js",
+    "predev:scripts": "npm-run-all -s tsc",
     "dev:scripts": "npm-run-all -p tsc:watch inspect",
     "dev": "set NODE_ENV=development&& nodemon --watch dist --exec \"npm run dev:scripts\"",
     "start": "npm run dev",
