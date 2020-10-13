@@ -17,13 +17,14 @@ OR
 ## Commands
 
 - `npm start` to start the development environment
-- `npm t` to run tests
+- `npm run test` to run tests
 - `npm run test:watch` to run tests in watch mode
 - `npm run format` to format with prettier
 - `npm run lint` to lint with eslint
 - `npm run gen-docs` to generate documentations website
 - `npm run prod` to run in production
 - `npm run compile` to compile to byte-code single executable file
+- `npm run docker:build` to create docker image with data from `.env` file and version # from `package.json`
 - `docker-compose up` to run in docker environment
 
 ## Functionalities
