@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.6.0](https://github.com/saostad/node-typescript-starter/compare/v2.5.1...v2.6.0)
+
+> 14 October 2020
+
+- feat: added nodeMode "production" or "development" in boilerplaite code [`4cdd46a`](https://github.com/saostad/node-typescript-starter/commit/4cdd46ac9b467b3f50674c25757aed54259f9d2a)
+- doc: change log [`7e52cc1`](https://github.com/saostad/node-typescript-starter/commit/7e52cc146f5ca78429cdcfaea1ff84ce96d73e75)
+
 #### [v2.5.1](https://github.com/saostad/node-typescript-starter/compare/v2.5.0...v2.5.1)
 
 > 13 October 2020
