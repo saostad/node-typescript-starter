@@ -1,13 +1,22 @@
 import dotenv from "dotenv";
+import path from "path";
 dotenv.config();
-
 import { createLogger, writeLog } from "fast-node-logger";
+import type { NodeMode } from "./typings/node/mode";
+
+/** server mode base on process.env.NODE_ENV */
+let nodeMode: NodeMode = process.env.NODE_ENV || "production";
+
+if (process.env.NODE_ENV) {
+  nodeMode = process.env.NODE_ENV;
+}
 
 export async function main() {
   /** ready to use instance of logger */
   const logger = await createLogger({
-    level: "trace",
+    level: nodeMode === "development" ? "trace" : "warn",
     prettyPrint: { colorize: true, translateTime: " yyyy-mm-dd HH:MM:ss" },
+    logDir: path.join(__dirname, "..", "logs"),
   });
 
   /** put your code below here */
