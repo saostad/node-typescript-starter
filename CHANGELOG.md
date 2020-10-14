@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.6.1](https://github.com/saostad/node-typescript-starter/compare/v2.6.0...v2.6.1)
+
+> 14 October 2020
+
+- fix: ts compile code before docker:build task [`3684857`](https://github.com/saostad/node-typescript-starter/commit/368485725e3dae3128c2c131657b6771d1711c28)
+- doc: change log [`1675563`](https://github.com/saostad/node-typescript-starter/commit/1675563a551973413817670ace14ec91211d7b22)
+
 #### [v2.6.0](https://github.com/saostad/node-typescript-starter/compare/v2.5.1...v2.6.0)
 
 > 14 October 2020
