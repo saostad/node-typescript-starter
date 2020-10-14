@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "description": "Typescript Opinionated Starter / Boilerplate for Node.js projects",
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "postpublish": "npm-run-all -s tag gen-changelog",
     "precompile": "tsc",
     "compile": "pkg ./dist/index.js --out-path ./compile --options max_old_space_size=4096",
+    "predocker:build": "tsc",
     "docker:build": "node ./config/docker-build.js",
     "inspect": "node --inspect --unhandled-rejections=strict dist/index.js",
     "predev:scripts": "npm-run-all -s tsc",
