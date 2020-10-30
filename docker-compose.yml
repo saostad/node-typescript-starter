@@ -22,7 +22,7 @@ services:
     # ports:
     #   - "4002:4002"
     #
-    command: "node --trace-warnings --unhandled-rejections=strict dist/index.js"
+    command: "node --unhandled-rejections=strict dist/index.js"
     # command: "npm install"
     #
 # uncomment below lines just in production

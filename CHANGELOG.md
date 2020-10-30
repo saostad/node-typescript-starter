@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.7.0](https://github.com/saostad/node-typescript-starter/compare/v2.6.2...v2.7.0)
+
+> 30 October 2020
+
+- docker: bump node veriosn to 14.15.0 [`b4ef757`](https://github.com/saostad/node-typescript-starter/commit/b4ef757a7ba671f73864756e781ea11ff2115b0c)
+- doc: change log [`233e267`](https://github.com/saostad/node-typescript-starter/commit/233e26714152710021f7ca9658c97238f3aad55b)
+
 #### [v2.6.2](https://github.com/saostad/node-typescript-starter/compare/v2.6.1...v2.6.2)
 
 > 29 October 2020
