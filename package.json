@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.6.2",
+  "version": "2.7.0",
   "description": "Typescript Opinionated Starter / Boilerplate for Node.js projects",
   "repository": {
     "type": "git",
@@ -32,7 +32,7 @@
     "dev:scripts": "npm-run-all -p tsc:watch inspect",
     "dev": "set NODE_ENV=development&& nodemon --watch dist --exec \"npm run dev:scripts\"",
     "start": "npm run dev",
-    "prod": "set NODE_ENV=production&& node --unhandled-rejections=strict dist/index.js"
+    "prod": "set NODE_ENV=production&& node --trace-warnings --unhandled-rejections=strict dist/index.js"
   },
   "keywords": [
     "node",
