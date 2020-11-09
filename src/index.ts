@@ -16,7 +16,7 @@ export async function main() {
   const logger = await createLogger({
     level: nodeMode === "development" ? "trace" : "warn",
     prettyPrint: { colorize: true, translateTime: " yyyy-mm-dd HH:MM:ss" },
-    logDir: path.join(__dirname, "..", "logs"),
+    logDir: path.join(process.cwd(), "logs"),
   });
 
   /** put your code below here */

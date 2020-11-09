@@ -427,7 +427,7 @@
         "affectsGlobalScope": false
       },
       "../src/index.ts": {
-        "version": "0e80aac1478be4b1cfac434a8624a8efdcdf09f722b1d7f14ff1b8160824af17",
+        "version": "b55ecea08e782a29ce84d35e437426188fe77b27e8ed1504302b4130990bce84",
         "signature": "aa6c6952d8bee2704d755956174757e509eb83d57b670b28d1afe124395f81f4",
         "affectsGlobalScope": false
       },
@@ -536,6 +536,11 @@
         "signature": "b2be568d8ce95fcb26eebd04c035d94825655fdf689bf67d799f5ff8cbbb1024",
         "affectsGlobalScope": false
       },
+      "../node_modules/@types/minimatch/index.d.ts": {
+        "version": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
+        "signature": "1d1e6bd176eee5970968423d7e215bfd66828b6db8d54d17afec05a831322633",
+        "affectsGlobalScope": false
+      },
       "../node_modules/@types/normalize-package-data/index.d.ts": {
         "version": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
         "signature": "c9ad058b2cc9ce6dc2ed92960d6d009e8c04bef46d3f5312283debca6869f613",
@@ -549,6 +554,11 @@
       "../node_modules/@types/stack-utils/index.d.ts": {
         "version": "c6c4fea9acc55d5e38ff2b70d57ab0b5cdbd08f8bc5d7a226e322cea128c5b57",
         "signature": "c6c4fea9acc55d5e38ff2b70d57ab0b5cdbd08f8bc5d7a226e322cea128c5b57",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/validator/index.d.ts": {
+        "version": "3ff2dd07f8aa032e6eb7ffacd8f4e1f0b8dac4ba02c1f6ea1413187aef947ec9",
+        "signature": "3ff2dd07f8aa032e6eb7ffacd8f4e1f0b8dac4ba02c1f6ea1413187aef947ec9",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/yargs-parser/index.d.ts": {
@@ -1083,6 +1093,7 @@
       "../node_modules/@types/istanbul-reports/index.d.ts",
       "../node_modules/@types/jest/index.d.ts",
       "../node_modules/@types/json-schema/index.d.ts",
+      "../node_modules/@types/minimatch/index.d.ts",
       "../node_modules/@types/node/assert.d.ts",
       "../node_modules/@types/node/async_hooks.d.ts",
       "../node_modules/@types/node/base.d.ts",
@@ -1136,6 +1147,7 @@
       "../node_modules/@types/prettier/index.d.ts",
       "../node_modules/@types/sonic-boom/index.d.ts",
       "../node_modules/@types/stack-utils/index.d.ts",
+      "../node_modules/@types/validator/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
       "../node_modules/dotenv/types/index.d.ts",

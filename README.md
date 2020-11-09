@@ -23,7 +23,7 @@ OR
 - `npm run lint` to lint with eslint
 - `npm run gen-docs` to generate documentations website
 - `npm run prod` to run in production
-- `npm run compile` to compile to byte-code single executable file
+- `npm run compile` to compile to obfuscated single executable file
 - `npm run docker:build` to create docker image with data from `.env` file and version # from `package.json`
 - `docker-compose up` to run in docker environment
 
@@ -37,7 +37,7 @@ OR
 - pre-configured to run in docker environment
 - pre-configured to log in logs in root folder with default log rotation
 - pre-configured to generate api documentations in `docs` folder of root project directory
-- pre-configured to compile the app to byte-code executable single file
+- pre-configured to compile the app to obfuscated executable single file
 - pre-configured to connect Chrome DevTools in development environment
 - restart the process after modifying ts files
 - dies at unhandled errors (this is very good strategy for production - docker will take care of restart the program after exit)
@@ -50,6 +50,7 @@ OR
 - [x] [jest](https://github.com/facebook/jest)
 - [x] [eslint](https://github.com/eslint/eslint)
 - [x] [pkg](https://www.npmjs.com/package/pkg)
+- [x] [javascript-obfuscator](https://github.com/javascript-obfuscator/javascript-obfuscator)
 - [x] [prettier](https://github.com/prettier/prettier)
 - [x] [TypeDoc](https://github.com/TypeStrong/TypeDoc)
 - [x] [auto-changelog](https://www.npmjs.com/package/auto-changelog)

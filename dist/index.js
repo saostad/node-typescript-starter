@@ -18,7 +18,7 @@ async function main() {
     const logger = await fast_node_logger_1.createLogger({
         level: nodeMode === "development" ? "trace" : "warn",
         prettyPrint: { colorize: true, translateTime: " yyyy-mm-dd HH:MM:ss" },
-        logDir: path_1.default.join(__dirname, "..", "logs"),
+        logDir: path_1.default.join(process.cwd(), "logs"),
     });
     /** put your code below here */
     logger.trace("logger started!");
