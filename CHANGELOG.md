@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.8.0](https://github.com/saostad/node-typescript-starter/compare/v2.7.0...v2.8.0)
+
+> 9 November 2020
+
+- feat: obfuscate code before compile and create single executable file [`2b4180e`](https://github.com/saostad/node-typescript-starter/commit/2b4180e46cfd3afe6ad75c32658424a3cebd3980)
+- doc: change log [`d7b8318`](https://github.com/saostad/node-typescript-starter/commit/d7b83188855f4882ce2fad7d2221efa2bec74eed)
+
 #### [v2.7.0](https://github.com/saostad/node-typescript-starter/compare/v2.6.2...v2.7.0)
 
 > 30 October 2020
