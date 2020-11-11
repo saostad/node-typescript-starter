@@ -22,6 +22,7 @@ OR
 - `npm run format` to format with prettier
 - `npm run lint` to lint with eslint
 - `npm run gen-docs` to generate documentations website
+- `npm run vulnerability-scan` to scan for vulnerabilities
 - `npm run prod` to run in production
 - `npm run compile` to compile to obfuscated single executable file
 - `npm run docker:build` to create docker image with data from `.env` file and version # from `package.json`
@@ -30,6 +31,7 @@ OR
 ## Functionalities
 
 - pre-configured to publish or create npm module
+- pre-configured to scan for vulnerabilities before publish to registry
 - pre-configured to git tag the commit at publish time
 - pre-configured to generate changelog.md file after each publish
 - pre-configured to run tests with jest
@@ -50,6 +52,7 @@ OR
 - [x] [jest](https://github.com/facebook/jest)
 - [x] [eslint](https://github.com/eslint/eslint)
 - [x] [pkg](https://www.npmjs.com/package/pkg)
+- [x] [snyk](https://www.npmjs.com/package/snyk)
 - [x] [javascript-obfuscator](https://github.com/javascript-obfuscator/javascript-obfuscator)
 - [x] [prettier](https://github.com/prettier/prettier)
 - [x] [TypeDoc](https://github.com/TypeStrong/TypeDoc)
