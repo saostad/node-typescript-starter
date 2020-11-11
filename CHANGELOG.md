@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.9.0](https://github.com/saostad/node-typescript-starter/compare/v2.8.1...v2.9.0)
+
+> 11 November 2020
+
+- feat: snyk added for vulnerability scan before npm publish [`227f796`](https://github.com/saostad/node-typescript-starter/commit/227f796ffae1574316cc34ca8db30840b9a60a50)
+- feat: scan for vulnerabilities before publish to registry [`1fb7ce4`](https://github.com/saostad/node-typescript-starter/commit/1fb7ce430eefa4d39b612e086f3daeb6d15babee)
+- doc: change log [`b3461fd`](https://github.com/saostad/node-typescript-starter/commit/b3461fd99a2648b506248558094f1da38078dbc4)
+
 #### [v2.8.1](https://github.com/saostad/node-typescript-starter/compare/v2.8.0...v2.8.1)
 
 > 9 November 2020
