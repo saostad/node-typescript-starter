@@ -68,3 +68,4 @@ OR
 - [ ] remove all startup overhead to have fastest start up
 - [ ] top-level await support (waiting for typescript to support it in CJS modules)
 - [ ] [docker best practices](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4)
+- [ ] cleanup non-relevant files after setting a new project (e.g. Readme.md, Changelog.md, quick-start.gif)
