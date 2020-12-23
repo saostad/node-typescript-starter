@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.9.2",
+  "version": "2.9.3",
   "description": "Typescript Opinionated Starter / Boilerplate for Node.js projects",
   "repository": {
     "type": "git",
