@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.9.3](https://github.com/saostad/node-typescript-starter/compare/v2.9.2...v2.9.3)
+
+> 23 December 2020
+
+- fix: remove extra files and folders from disk. [`9cd0f32`](https://github.com/saostad/node-typescript-starter/commit/9cd0f3257e5bfa44f9c8b17d8454d659e951e1c1)
+- doc: change log [`7d160a5`](https://github.com/saostad/node-typescript-starter/commit/7d160a5f302bdda7493b0136d630dae49c6521c6)
+
 #### [v2.9.2](https://github.com/saostad/node-typescript-starter/compare/v2.9.1...v2.9.2)
 
 > 23 December 2020
