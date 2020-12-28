@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.9.4](https://github.com/saostad/node-typescript-starter/compare/v2.9.3...v2.9.4)
+
+> 28 December 2020
+
+- package: updated [`5409c41`](https://github.com/saostad/node-typescript-starter/commit/5409c4191d76734f506ec8780278bfd827905f65)
+- doc: change log [`8bfeca4`](https://github.com/saostad/node-typescript-starter/commit/8bfeca4f6a58c9223e752796576b26948eb7fb69)
+
 #### [v2.9.3](https://github.com/saostad/node-typescript-starter/compare/v2.9.2...v2.9.3)
 
 > 23 December 2020
