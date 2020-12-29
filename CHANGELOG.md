@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.9.7](https://github.com/saostad/node-typescript-starter/compare/v2.9.6...v2.9.7)
+
+> 29 December 2020
+
+- fix: tsconfig for eslint parser [`10d40c9`](https://github.com/saostad/node-typescript-starter/commit/10d40c908b278bfaf1376dd5fe3ba4e7d3820eab)
+- doc: change log [`45f5837`](https://github.com/saostad/node-typescript-starter/commit/45f583798a523256f476069b6dfc9b6d816f740b)
+
 #### [v2.9.6](https://github.com/saostad/node-typescript-starter/compare/v2.9.4...v2.9.6)
 
 > 28 December 2020
