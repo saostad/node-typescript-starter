@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.9.6](https://github.com/saostad/node-typescript-starter/compare/v2.9.4...v2.9.6)
+
+> 28 December 2020
+
+- doc: change log [`a8d3d5e`](https://github.com/saostad/node-typescript-starter/commit/a8d3d5e02363f8a155b548fd663d7087a4b4d4bc)
+- fix: jest config [`e28830a`](https://github.com/saostad/node-typescript-starter/commit/e28830abb7e17b0d9b1600b91f79413f64292e91)
+
 #### [v2.9.4](https://github.com/saostad/node-typescript-starter/compare/v2.9.3...v2.9.4)
 
 > 28 December 2020
