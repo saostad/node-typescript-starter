@@ -12,7 +12,9 @@ OR
 
 `npm init ts-starter PROJECT_NAME VSCode`
 
-### notice: you can ignore last param 'VSCode' is you don't want to open the project in VSCode!
+### Notice:
+
+If you don't want to open the project folder in VSCode, You can ignore the 'VSCode' parameter.
 
 ## Commands
 
