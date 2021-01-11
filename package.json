@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.9.10",
+  "version": "2.9.11",
   "description": "Typescript Opinionated Starter / Boilerplate for Node.js projects",
   "repository": {
     "type": "git",
@@ -73,6 +73,6 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
-    "fast-node-logger": "^1.4.9"
+    "fast-node-logger": "^1.4.10"
   }
 }

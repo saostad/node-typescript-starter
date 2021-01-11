@@ -412,8 +412,8 @@
         "affectsGlobalScope": false
       },
       "../node_modules/@types/pino/index.d.ts": {
-        "version": "8118a14bda1ce9f3d3f0bed3ce1076c5b2a4a9e79fd1cd6eff44d013737364ce",
-        "signature": "8118a14bda1ce9f3d3f0bed3ce1076c5b2a4a9e79fd1cd6eff44d013737364ce",
+        "version": "3033f9b92302f6fdbb0f5ea87c0f43091bbcf467d3bd1eb7eeaf913d0a6c8a3a",
+        "signature": "3033f9b92302f6fdbb0f5ea87c0f43091bbcf467d3bd1eb7eeaf913d0a6c8a3a",
         "affectsGlobalScope": false
       },
       "../node_modules/fast-node-logger/dist/index.d.ts": {
