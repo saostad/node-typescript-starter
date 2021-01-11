@@ -31,18 +31,18 @@ OR
 ## Functionalities
 
 - pre-configured to publish or create npm module
-- pre-configured to scan for vulnerabilities before publish to registry
+- pre-configured to scan for vulnerabilities before publishing to registry
 - pre-configured to git tag the commit at publish time
-- pre-configured to generate changelog.md file after each publish
+- pre-configured to generate changelog.md file after each publishes
 - pre-configured to run tests with jest
 - pre-configured to load environment variables from .env file
-- pre-configured to run in docker environment
-- pre-configured to log in logs in root folder with default log rotation
-- pre-configured to generate api documentations in `docs` folder of root project directory
-- pre-configured to compile the app to obfuscated executable single file
-- pre-configured to connect Chrome DevTools in development environment
+- pre-configured to run in a docker environment
+- pre-configured to log in logs in the root folder with default log rotation
+- pre-configured to generate API documentation in docs folder of the root project directory
+- pre-configured to compile the app to an obfuscated executable single file
+- pre-configured to connect Chrome DevTools in a development environment
 - restart the process after modifying ts files
-- dies at unhandled errors (this is very good strategy for production - docker will take care of restart the program after exit)
+- dies at unhandled errors (this is a very good strategy for production - docker will take care of restart the program after exit)
 - type-def for process.env variables
 
 ## Powered By:
