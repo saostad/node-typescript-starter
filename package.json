@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.9.12",
+  "version": "2.9.13",
   "description": "Typescript Opinionated Starter / Boilerplate for Node.js projects",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "gen-changelog": "npm run auto-changelog && git add CHANGELOG.md && git commit -m \"doc: change log\"",
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",
-    "vulnerability-scan": "snyk test",
+    "vulnerability-scan": "node ./config/vulnerability-scan.js",
     "prepublishOnly": "npm-run-all -s tsc vulnerability-scan gen-docs",
     "postpublish": "npm-run-all -s tag gen-changelog",
     "obfuscate": "javascript-obfuscator ./dist --output ./obfuscated --compact true --ignore-require-imports true",
