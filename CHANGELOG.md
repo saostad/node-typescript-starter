@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.9.13](https://github.com/saostad/node-typescript-starter/compare/v2.9.12...v2.9.13)
+
+> 12 January 2021
+
+- fix: show vulnerability scan result in console insteade of break publish script [`8167397`](https://github.com/saostad/node-typescript-starter/commit/8167397bf7b4298796bd8c3aff2fa2f156e33a29)
+- doc: change log [`1526bf3`](https://github.com/saostad/node-typescript-starter/commit/1526bf323731d34e8058f7aa5083055755a771d0)
+
 #### [v2.9.12](https://github.com/saostad/node-typescript-starter/compare/v2.9.11...v2.9.12)
 
 > 11 January 2021
