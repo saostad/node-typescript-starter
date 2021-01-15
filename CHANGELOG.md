@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.9.15](https://github.com/saostad/node-typescript-starter/compare/v2.9.13...v2.9.15)
+
+> 14 January 2021
+
+- feat: added --trace-warning in dev script [`3b311cb`](https://github.com/saostad/node-typescript-starter/commit/3b311cb33f533129d8637e31a0b00d8a77726889)
+- doc: change log [`cf07698`](https://github.com/saostad/node-typescript-starter/commit/cf07698ad5f37a2f5f78f3c812cb8a33b6daf974)
+
 #### [v2.9.13](https://github.com/saostad/node-typescript-starter/compare/v2.9.12...v2.9.13)
 
 > 12 January 2021
