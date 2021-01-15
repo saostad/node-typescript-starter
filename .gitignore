@@ -23,3 +23,4 @@ test/fixtures/test*
 compile
 out
 obfuscated
+dist

@@ -5,4 +5,5 @@ docs
 generated
 /src/**/*.*
 /compile/**
-obfuscated
+/obfuscated/**/*.*
+/dist/**/*.*

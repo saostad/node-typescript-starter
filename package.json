@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.9.13",
+  "version": "2.9.15",
   "description": "Typescript Opinionated Starter / Boilerplate for Node.js projects",
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
     "compile": "pkg ./obfuscated/index.js --out-path ./compile --options max_old_space_size=4096",
     "predocker:build": "tsc",
     "docker:build": "node ./config/docker-build.js",
-    "inspect": "node --inspect --unhandled-rejections=strict dist/index.js",
+    "inspect": "node --inspect --trace-warnings --unhandled-rejections=strict dist/index.js",
     "predev:scripts": "npm-run-all -s tsc",
     "dev:scripts": "npm-run-all -p tsc:watch inspect",
     "dev": "set NODE_ENV=development&& nodemon --watch dist --exec \"npm run dev:scripts\"",
@@ -53,7 +53,7 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.20",
+    "@types/node": "^14.14.21",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
     "auto-changelog": "^2.2.1",
@@ -67,7 +67,7 @@
     "npm-run-all": "^4.1.5",
     "pkg": "^4.4.9",
     "prettier": "^2.2.1",
-    "snyk": "^1.437.3",
+    "snyk": "^1.437.4",
     "ts-jest": "^26.4.4",
     "typedoc": "^0.20.14",
     "typescript": "^4.1.3"
