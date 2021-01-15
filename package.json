@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "2.9.16",
+  "version": "2.9.17",
   "description": "Production ready starter for typescript node project",
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
     "docker:build": "node ./config/docker-build.js",
     "inspect": "node --inspect --trace-warnings --unhandled-rejections=strict dist/index.js",
     "tsc:watch": "tsc --watch",
-    "dev:scripts": "npm-run-all -p tsc:watch inspect",
+    "dev:scripts": "npm-run-all -p -c tsc:watch inspect",
     "dev": "set NODE_ENV=development&& nodemon --watch dist --exec \"npm run dev:scripts\"",
     "start": "node ./config/clean-start.js && npm run dev",
     "prod": "set NODE_ENV=production&& node --trace-warnings --unhandled-rejections=strict dist/index.js"

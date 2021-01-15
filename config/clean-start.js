@@ -1,6 +1,8 @@
-/** this script compile the project for the first time
+/** to prevent tsc compiler in command line break and prevent the compiler from going to watch mode
+ * this script compile the project for the first time respecting tsconfig.json file
  * - delete the old compiled folder
- * - create a new file
+ * - compile the ts files to the outDir folder (it just transpile the code)
+ * - print compile error messages (not break like default behaviour of compiler)
  */
 
 const ts = require("typescript");
