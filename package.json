@@ -1,7 +1,7 @@
 {
   "name": "create-ts-starter",
-  "version": "2.9.15",
-  "description": "Typescript Opinionated Starter / Boilerplate for Node.js projects",
+  "version": "2.9.16",
+  "description": "Production ready starter for typescript node project",
   "repository": {
     "type": "git",
     "url": "https://github.com/saostad/node-typescript-starter.git"
@@ -19,21 +19,20 @@
     "tag": "node ./config/tag.js",
     "auto-changelog": "auto-changelog --hide-credit --breaking-pattern \"breaking:\"",
     "gen-changelog": "npm run auto-changelog && git add CHANGELOG.md && git commit -m \"doc: change log\"",
-    "tsc": "tsc",
-    "tsc:watch": "tsc --watch",
     "vulnerability-scan": "node ./config/vulnerability-scan.js",
+    "obfuscate": "javascript-obfuscator ./dist --output ./obfuscated --compact true --ignore-require-imports true",
+    "compile": "pkg ./obfuscated/index.js --out-path ./compile --options max_old_space_size=4096",
+    "tsc": "tsc",
     "prepublishOnly": "npm-run-all -s tsc vulnerability-scan gen-docs",
     "postpublish": "npm-run-all -s tag gen-changelog",
-    "obfuscate": "javascript-obfuscator ./dist --output ./obfuscated --compact true --ignore-require-imports true",
     "precompile": "npm-run-all -s tsc obfuscate",
-    "compile": "pkg ./obfuscated/index.js --out-path ./compile --options max_old_space_size=4096",
     "predocker:build": "tsc",
     "docker:build": "node ./config/docker-build.js",
     "inspect": "node --inspect --trace-warnings --unhandled-rejections=strict dist/index.js",
-    "predev:scripts": "npm-run-all -s tsc",
+    "tsc:watch": "tsc --watch",
     "dev:scripts": "npm-run-all -p tsc:watch inspect",
     "dev": "set NODE_ENV=development&& nodemon --watch dist --exec \"npm run dev:scripts\"",
-    "start": "npm run dev",
+    "start": "node ./config/clean-start.js && npm run dev",
     "prod": "set NODE_ENV=production&& node --trace-warnings --unhandled-rejections=strict dist/index.js"
   },
   "keywords": [
@@ -67,7 +66,9 @@
     "npm-run-all": "^4.1.5",
     "pkg": "^4.4.9",
     "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
     "snyk": "^1.437.4",
+    "strip-json-comments": "^3.1.1",
     "ts-jest": "^26.4.4",
     "typedoc": "^0.20.14",
     "typescript": "^4.1.3"

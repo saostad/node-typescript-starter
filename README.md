@@ -1,6 +1,6 @@
 # node typescript starter
 
-### An opinionated combination of my favorite tools for starting a node project
+### Production ready starter for typescript node project
 
 # Quick Start
 
