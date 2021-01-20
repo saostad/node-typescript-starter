@@ -19,15 +19,9 @@ export async function main() {
     logDir: path.join(process.cwd(), "logs"),
   });
 
+  logger.trace(`script started in ${nodeMode} mode!`);
+
   /** put your code below here */
-
-  logger.trace("logger started!");
-
-  // alternative to access logger
-  writeLog(`here is my secret: ${process.env.MY_SECRET}`, {
-    stdout: true,
-    level: "warn",
-  });
 
   return process.env.MY_SECRET;
 }
