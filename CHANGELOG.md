@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.9.18](https://github.com/saostad/node-typescript-starter/compare/v2.9.17...v2.9.18)
+
+> 20 January 2021
+
+- fix: stop typescript clear out logs in watch mode [`0ac002a`](https://github.com/saostad/node-typescript-starter/commit/0ac002a1f06c1928bc430b48e79c67c141ee7216)
+- doc: change log [`8babd68`](https://github.com/saostad/node-typescript-starter/commit/8babd68d3d192a8bee9245e54782bafd42e11526)
+
 #### [v2.9.17](https://github.com/saostad/node-typescript-starter/compare/v2.9.16...v2.9.17)
 
 > 15 January 2021
