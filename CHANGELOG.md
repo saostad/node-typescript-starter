@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v2.9.19](https://github.com/saostad/node-typescript-starter/compare/v2.9.18...v2.9.19)
+
+> 26 January 2021
+
+- doc: better index.ts starter [`dec22a7`](https://github.com/saostad/node-typescript-starter/commit/dec22a794696925e416d0bf428f068c7a8f5dd4a)
+- fix: increased order of scripts in dev mode [`3123b57`](https://github.com/saostad/node-typescript-starter/commit/3123b572a99d374bf0e3c33e3455fc6bb84bba32)
+- doc: change log [`ee24045`](https://github.com/saostad/node-typescript-starter/commit/ee24045a7c2ff9211566fe120db4247c08bb2340)
+
 #### [v2.9.18](https://github.com/saostad/node-typescript-starter/compare/v2.9.17...v2.9.18)
 
 > 20 January 2021
