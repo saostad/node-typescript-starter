@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import path from "path";
 dotenv.config();
 import { createLogger, writeLog } from "fast-node-logger";
+import { findCredentials } from "keytar";
 import type { NodeMode } from "./typings/node/mode";
 
 /** server mode base on process.env.NODE_ENV */
@@ -18,12 +19,13 @@ export async function main() {
     prettyPrint: { colorize: true, translateTime: " yyyy-mm-dd HH:MM:ss" },
     logDir: path.join(process.cwd(), "logs"),
   });
-
   logger.trace(`script started in ${nodeMode} mode!`);
 
   /** put your code below here */
+  /**@step if needed, load required credentials from host operating system's credential manager */
+  // const [myCred] = await findCredentials("CREDENTIAL_NAME_HERE");
 
-  return process.env.MY_SECRET;
+  return process.env.MY_SECRET; // this line is just for passing test, you can remove it in your app
 }
 
 main().catch((err: Error) => {

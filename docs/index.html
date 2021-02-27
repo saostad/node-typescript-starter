@@ -87,7 +87,7 @@
 					<li><code>npm run gen-docs</code> to generate documentations website</li>
 					<li><code>npm run vulnerability-scan</code> to scan for vulnerabilities</li>
 					<li><code>npm run prod</code> to run in production</li>
-					<li><code>npm run compile</code> to compile to obfuscated single executable file</li>
+					<li><code>npm run compile</code> to compile to single executable file</li>
 					<li><code>npm run docker:build</code> to create docker image with data from <code>.env</code> file and version # from <code>package.json</code></li>
 					<li><code>docker-compose up</code> to run in docker environment</li>
 				</ul>
@@ -101,10 +101,11 @@
 					<li>pre-configured to generate changelog.md file after each publishes</li>
 					<li>pre-configured to run tests with jest</li>
 					<li>pre-configured to load environment variables from .env file</li>
+					<li>pre-configured to load credentials from host operation system&#39;s credential manger</li>
 					<li>pre-configured to run in a docker environment</li>
-					<li>pre-configured to log in logs in the root folder with default log rotation</li>
+					<li>pre-configured to write logs in .log file in the logs directory with default log rotation of 7 days</li>
 					<li>pre-configured to generate API documentation in docs folder of the root project directory</li>
-					<li>pre-configured to compile the app to an obfuscated executable single file</li>
+					<li>pre-configured to compile the app to an executable single file</li>
 					<li>pre-configured to connect Chrome DevTools in a development environment</li>
 					<li>restart the process after modifying ts files</li>
 					<li>dies at unhandled errors (this is a very good strategy for production - docker will take care of restart the program after exit)</li>
@@ -120,7 +121,7 @@
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/eslint/eslint">eslint</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/pkg">pkg</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/snyk">snyk</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/javascript-obfuscator/javascript-obfuscator">javascript-obfuscator</a></li>
+					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/keytar">keytar</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/prettier/prettier">prettier</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/TypeStrong/TypeDoc">TypeDoc</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/auto-changelog">auto-changelog</a></li>
@@ -137,7 +138,6 @@
 					<li><input disabled="" type="checkbox"> remove all startup overhead to have fastest start up</li>
 					<li><input disabled="" type="checkbox"> top-level await support (waiting for typescript to support it in CJS modules)</li>
 					<li><input disabled="" type="checkbox"> <a href="https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4">docker best practices</a></li>
-					<li><input disabled="" type="checkbox"> cleanup non-relevant files after setting a new project (e.g. Readme.md, Changelog.md, quick-start.gif)</li>
 				</ul>
 			</div>
 		</div>
