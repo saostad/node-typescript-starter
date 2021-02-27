@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+### [v3.0.0](https://github.com/saostad/node-typescript-starter/compare/v2.9.21...v3.0.0)
+
+> 26 February 2021
+
+- pkg: removed pkg javascript-obfuscator in favor of keytar [`e62ee0b`](https://github.com/saostad/node-typescript-starter/commit/e62ee0b97d04ff3eb878ff6dea334985075961ef)
+- doc: change log [`f85ab9f`](https://github.com/saostad/node-typescript-starter/commit/f85ab9fcfffbfd350f9524123bc1a707b8dad844)
+
 #### [v2.9.21](https://github.com/saostad/node-typescript-starter/compare/v2.9.20...v2.9.21)
 
 > 23 February 2021
