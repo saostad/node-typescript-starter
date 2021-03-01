@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v3.0.2](https://github.com/saostad/node-typescript-starter/compare/v3.0.1...v3.0.2)
+
+> 1 March 2021
+
+- fix: removed Nul characters /x00 from password field in credential [`2233304`](https://github.com/saostad/node-typescript-starter/commit/22333046f84ae8ca3dea8c860e25aebad2fb8bc5)
+- doc: change log [`26deb08`](https://github.com/saostad/node-typescript-starter/commit/26deb0899b179303c018ea3a8ff211855ba277b2)
+
 #### [v3.0.1](https://github.com/saostad/node-typescript-starter/compare/v3.0.0...v3.0.1)
 
 > 1 March 2021
