@@ -22,8 +22,8 @@ export async function main() {
   logger.trace(`script started in ${nodeMode} mode!`);
 
   /** put your code below here */
-  const { password } = await getCredential("test_cred");
-  console.log(`File: index.ts,`, `Line: 26 => `, password);
+  const { account, password } = await getCredential("test_cred");
+  console.log(`loaded credential: `, account, password);
 
   return process.env.MY_SECRET; // this line is just for passing test, you can remove it in your app
 }

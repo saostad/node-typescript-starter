@@ -73,3 +73,4 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - [ ] remove all startup overhead to have fastest start up
 - [ ] top-level await support (waiting for typescript to support it in CJS modules)
 - [ ] [docker best practices](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4)
+- [ ] add entry for other builds (e.g. esm, browser, ...)
