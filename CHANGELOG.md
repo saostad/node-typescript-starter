@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v3.0.3](https://github.com/saostad/node-typescript-starter/compare/v3.0.2...v3.0.3)
+
+> 2 March 2021
+
+- fix: compile doesn't work with .node b=native modules [`5d7587f`](https://github.com/saostad/node-typescript-starter/commit/5d7587f90951f2a575aebcbb18773aaadf1d9556)
+- doc: change log [`79bc5ec`](https://github.com/saostad/node-typescript-starter/commit/79bc5ec60deb0ffc1355e55365f9383c66c6cade)
+
 #### [v3.0.2](https://github.com/saostad/node-typescript-starter/compare/v3.0.1...v3.0.2)
 
 > 1 March 2021
