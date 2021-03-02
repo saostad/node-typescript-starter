@@ -48,7 +48,7 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - dies at unhandled errors (this is a very good strategy for production - docker will take care of restart the program after exit)
 - type-def for process.env variables
 
-## Powered By:
+## Powered By (Credit):
 
 - [x] [typescript](https://github.com/Microsoft/TypeScript)
 - [x] [fast-node-logger](https://github.com/saostad/fast-node-logger)
@@ -62,6 +62,8 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - [x] [auto-changelog](https://www.npmjs.com/package/auto-changelog)
 - [x] [npm-run-all](https://github.com/mysticatea/npm-run-all)
 - [x] [nodemon](https://github.com/remy/nodemon)
+- [x] [rollup](https://www.npmjs.com/package/rollup)
+- [x] [colors](https://www.npmjs.com/package/colors
 - [x] [Docker](https://www.docker.com/)
 
 ## TODO:
