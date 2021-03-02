@@ -7,3 +7,4 @@ generated
 /compile/**
 /obfuscated/**/*.*
 /dist/**/*.*
+/release/**/*.*

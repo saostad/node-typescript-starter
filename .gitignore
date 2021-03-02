@@ -24,3 +24,4 @@ compile
 out
 obfuscated
 dist
+release

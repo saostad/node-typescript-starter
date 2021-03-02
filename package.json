@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Production ready starter for typescript node project",
   "repository": {
     "type": "git",
@@ -20,9 +20,9 @@
     "auto-changelog": "auto-changelog --hide-credit --breaking-pattern \"breaking:\"",
     "gen-changelog": "npm run auto-changelog && git add CHANGELOG.md && git commit -m \"doc: change log\"",
     "vulnerability-scan": "node ./config/vulnerability-scan.js",
-    "clean": "rimraf ./dist ./compile",
+    "clean": "rimraf ./dist ./compile ./release",
     "precompile": "npm-run-all -s clean tsc",
-    "compile": "pkg ./dist/index.js --out-path ./compile --options max_old_space_size=4096",
+    "compile": "node --trace-warnings ./config/compile.js",
     "tsc": "tsc",
     "prepublishOnly": "npm-run-all -s tsc vulnerability-scan gen-docs",
     "postpublish": "npm-run-all -s tag gen-changelog",
@@ -51,11 +51,17 @@
     "delay": "1000"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-typescript": "^8.2.0",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.31",
     "@typescript-eslint/eslint-plugin": "^4.16.0",
     "@typescript-eslint/parser": "^4.16.0",
     "auto-changelog": "^2.2.1",
+    "builtin-modules": "^3.2.0",
+    "colors": "^1.4.0",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
@@ -65,15 +71,18 @@
     "pkg": "^4.4.9",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
+    "rollup": "^2.40.0",
+    "rollup-plugin-natives": "^0.7.2",
     "snyk": "^1.464.0",
     "strip-json-comments": "^3.1.1",
     "ts-jest": "^26.5.2",
+    "tslib": "^2.1.0",
     "typedoc": "^0.20.28",
     "typescript": "^4.2.2"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "keytar": "^7.4.0",
-    "fast-node-logger": "^1.4.12"
+    "fast-node-logger": "^1.4.12",
+    "keytar": "^7.4.0"
   }
 }
