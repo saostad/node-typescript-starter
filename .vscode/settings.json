@@ -7,5 +7,6 @@
     "precompile",
     "prestart",
     "snyk"
-  ]
+  ],
+  "gitdoc.enabled": false
 }
