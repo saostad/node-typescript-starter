@@ -64,16 +64,15 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - [x] [npm-run-all](https://github.com/mysticatea/npm-run-all)
 - [x] [nodemon](https://github.com/remy/nodemon)
 - [x] [rollup](https://www.npmjs.com/package/rollup)
-- [x] [colors](https://www.npmjs.com/package/colors
+- [x] [colors](https://www.npmjs.com/package/colors)
 - [x] [Docker](https://www.docker.com/)
 
 ## TODO:
 
 - [ ] add error handling [best practices](https://www.youtube.com/watch?v=62ZRPJkHOX0&list=WL&index=10&t=0s)
-- [ ] add pm2 for process monitoring in development
-- [ ] remove all startup overhead to have fastest start up
-- [ ] top-level await support (waiting for typescript to support it in CJS modules)
+- [ ] remove startup overhead to have fastest start up
 - [ ] [docker best practices](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4)
 - [ ] add entry for other builds (e.g. esm, browser, ...)
 - [ ] fix failures when git is not installed on the host system.
 - [ ] add templates to based on type of project that user wants to create, generate different projects ([esbuild](https://github.com/evanw/esbuild) for projects without decorators, tsc compiler, ...)
+- [ ] change rollup to use dist folder instead of compiling typescript files, that hopefully lead more consistency between dev and prod environment.
