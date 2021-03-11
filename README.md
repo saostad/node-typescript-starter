@@ -47,6 +47,7 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - restart the process after modifying ts files
 - dies at unhandled errors (this is a very good strategy for production - docker will take care of restart the program after exit)
 - type-def for process.env variables
+- pre-configured to [recommend vscode extensions](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)
 
 ## Powered By (Credit):
 
@@ -74,4 +75,4 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - [ ] top-level await support (waiting for typescript to support it in CJS modules)
 - [ ] [docker best practices](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4)
 - [ ] add entry for other builds (e.g. esm, browser, ...)
-- [ ] add [recommended vscode extensions](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)
+- [ ] fix failures when git is not installed on the host system.
