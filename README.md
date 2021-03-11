@@ -76,3 +76,4 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - [ ] [docker best practices](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4)
 - [ ] add entry for other builds (e.g. esm, browser, ...)
 - [ ] fix failures when git is not installed on the host system.
+- [ ] add templates to based on type of project that user wants to create, generate different projects ([esbuild](https://github.com/evanw/esbuild) for projects without decorators, tsc compiler, ...)
