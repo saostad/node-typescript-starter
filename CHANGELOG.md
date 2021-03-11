@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v3.1.2](https://github.com/saostad/node-typescript-starter/compare/v3.1.1...v3.1.2)
+
+> 11 March 2021
+
+- doc: todo list in readme updated [`1a67cda`](https://github.com/saostad/node-typescript-starter/commit/1a67cda1562e5eff7311152c77e65fb38e98d8ca)
+- doc: change log [`51054c7`](https://github.com/saostad/node-typescript-starter/commit/51054c75a27022d6833441b4642ef48c6d08e6ea)
+
 #### [v3.1.1](https://github.com/saostad/node-typescript-starter/compare/v3.1.0...v3.1.1)
 
 > 11 March 2021
