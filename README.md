@@ -76,3 +76,4 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - [ ] fix failures when git is not installed on the host system.
 - [ ] add templates to based on type of project that user wants to create, generate different projects ([esbuild](https://github.com/evanw/esbuild) for projects without decorators, tsc compiler, ...)
 - [ ] change rollup to use dist folder instead of compiling typescript files, that hopefully lead more consistency between dev and prod environment.
+- [ ] add [boxednode](https://github.com/mongodb-js/boxednode) as another choice for create single executable file and add [compiler caching](https://github.com/mongodb-js/boxednode/issues/15#issuecomment-789917717) for speedup compile time.
