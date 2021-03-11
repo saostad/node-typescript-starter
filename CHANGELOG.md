@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v3.1.0](https://github.com/saostad/node-typescript-starter/compare/v3.0.8...v3.1.0)
+
+> 11 March 2021
+
+- feat: added recommend vscode extensions [`4b6a748`](https://github.com/saostad/node-typescript-starter/commit/4b6a74824c9c13eaa6542b2365dd5b44e50c6405)
+- doc: change log [`a0a8421`](https://github.com/saostad/node-typescript-starter/commit/a0a8421aa7f2f573399419f6e0eb2bbcc5e76066)
+
 #### [v3.0.8](https://github.com/saostad/node-typescript-starter/compare/v3.0.7...v3.0.8)
 
 > 8 March 2021
