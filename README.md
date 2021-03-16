@@ -78,3 +78,4 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - [ ] change rollup to use dist folder instead of compiling typescript files, that hopefully lead more consistency between dev and prod environment.
 - [ ] add [boxednode](https://github.com/mongodb-js/boxednode) as another choice for create single executable file and add [compiler caching](https://github.com/mongodb-js/boxednode/issues/15#issuecomment-789917717) for speedup compile time.
 - [ ] add please wait... in initial of the process
+- [ ] run test, format, lint before publish
