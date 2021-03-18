@@ -28,9 +28,10 @@
     "postpublish": "npm-run-all -s tag gen-changelog",
     "predocker:build": "tsc",
     "docker:build": "node ./config/docker-build.js",
-    "inspect": "node --inspect --trace-warnings --unhandled-rejections=strict dist/index.js",
+    "index:inspect": "node --inspect --trace-warnings --unhandled-rejections=strict dist/index.js",
+    "index": "node --trace-warnings --unhandled-rejections=strict dist/index.js",
     "tsc:watch": "tsc --watch --preserveWatchOutput",
-    "dev:monitor": "set NODE_ENV=development&& nodemon --delay 2.5 --watch dist --exec \"npm run inspect\"",
+    "dev:monitor": "set NODE_ENV=development&& nodemon --delay 2.5 --watch dist --exec \"npm run index\"",
     "dev": "npm-run-all -p -c tsc:watch dev:monitor",
     "start": "node ./config/clean-start.js && npm run dev",
     "prod": "set NODE_ENV=production&& node --trace-warnings --unhandled-rejections=strict dist/index.js"
