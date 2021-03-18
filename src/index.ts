@@ -18,6 +18,7 @@ export async function main() {
     level: nodeMode === "development" ? "trace" : "warn",
     prettyPrint: { colorize: true, translateTime: " yyyy-mm-dd HH:MM:ss" },
     logDir: path.join(process.cwd(), "logs"),
+    retentionTime: nodeMode === "development" ? 360000 : undefined,
   });
   logger.trace(`script started in ${nodeMode} mode!`);
 
