@@ -72,13 +72,13 @@
     "pkg": "^4.4.9",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
-    "rollup": "^2.41.5",
+    "rollup": "^2.42.2",
     "rollup-plugin-natives": "^0.7.2",
-    "snyk": "^1.498.0",
+    "snyk": "^1.503.0",
     "strip-json-comments": "^3.1.1",
     "ts-jest": "^26.5.4",
     "tslib": "^2.1.0",
-    "typedoc": "^0.20.32",
+    "typedoc": "^0.20.33",
     "typescript": "^4.2.3"
   },
   "dependencies": {
