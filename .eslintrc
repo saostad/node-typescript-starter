@@ -15,13 +15,13 @@
     "es6": true
   },
   "rules": {
+    "no-async-promise-executor": "warn",
+    "no-console": "warn",
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/interface-name-prefix": 0,
-    "no-async-promise-executor": "warn",
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/indent": 0,
-    "no-console": "warn",
-    "no-shadow": "warn",
+    "@typescript-eslint/no-shadow": "error",
     "@typescript-eslint/explicit-module-boundary-types": 0
   }
 }
