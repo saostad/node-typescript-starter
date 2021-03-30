@@ -1,9 +1,8 @@
 import dotenv from "dotenv";
-import path from "path";
 dotenv.config();
-import { createLogger, writeLog } from "fast-node-logger";
+import { writeLog } from "fast-node-logger";
 import type { NodeMode } from "./typings/node/mode";
-import { getCredential } from "./helpers/util";
+import { createLoggerInstance, getCredential } from "./helpers/util";
 
 /** server mode base on process.env.NODE_ENV */
 let nodeMode: NodeMode = process.env.NODE_ENV || "production";
@@ -13,18 +12,23 @@ if (process.env.NODE_ENV) {
 }
 
 export async function main() {
-  /** ready to use instance of logger */
-  const logger = await createLogger({
-    level: nodeMode === "development" ? "trace" : "warn",
-    prettyPrint: { colorize: true, translateTime: " yyyy-mm-dd HH:MM:ss" },
-    logDir: path.join(process.cwd(), "logs"),
-    retentionTime: nodeMode === "development" ? 360000 : undefined,
-  });
-  logger.trace(`script started in ${nodeMode} mode!`);
+  /**@step create a logger instance */
+  /**@description logger instance to store logs in files located in ./logs directory */
+  const logger = await createLoggerInstance(nodeMode);
 
-  /** put your code below here */
-  const { account, password } = await getCredential("test_cred");
-  console.log(`loaded credential: `, account, password);
+  /**@note put your code below here */
+
+  /**
+   * @BEST_PRACTICES how to store credential out of source code
+   * - use operating system credential manager
+   * - use .env file located in project root directory
+   */
+  getCredential("test_cred").then(({ account, password }) => {
+    writeLog(`loaded credential: ${account}, ${password}`, {
+      level: "warn",
+      stdout: true,
+    });
+  });
 
   return process.env.MY_SECRET; // this line is just for passing test, you can remove it in your app
 }
