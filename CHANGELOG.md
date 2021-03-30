@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v3.1.3](https://github.com/saostad/node-typescript-starter/compare/v3.1.2...v3.1.3)
+
+> 30 March 2021
+
+- pkg: updated [`#7`](https://github.com/saostad/node-typescript-starter/pull/7)
+- pkg: removed no needed packages [`865240a`](https://github.com/saostad/node-typescript-starter/commit/865240a1390eab9b13636ee4d5f0a2d8334d2d27)
+- doc: change log [`0c101b7`](https://github.com/saostad/node-typescript-starter/commit/0c101b760e37ea660f392f6c08a41a7cdaa8266b)
+- fix: eslint-typescript rule for no-shadow variables [`1018959`](https://github.com/saostad/node-typescript-starter/commit/101895905f3642380990d6f634e684c269e85adf)
+
 #### [v3.1.2](https://github.com/saostad/node-typescript-starter/compare/v3.1.1...v3.1.2)
 
 > 11 March 2021
