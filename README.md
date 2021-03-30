@@ -63,7 +63,6 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - [x] [auto-changelog](https://www.npmjs.com/package/auto-changelog)
 - [x] [npm-run-all](https://github.com/mysticatea/npm-run-all)
 - [x] [nodemon](https://github.com/remy/nodemon)
-- [x] [rollup](https://www.npmjs.com/package/rollup)
 - [x] [colors](https://www.npmjs.com/package/colors)
 - [x] [Docker](https://www.docker.com/)
 
@@ -75,7 +74,6 @@ If you don't want to open the project folder in VSCode, You can ignore the 'VSCo
 - [ ] add entry for other builds (e.g. esm, browser, ...)
 - [ ] fix failures when git is not installed on the host system.
 - [ ] add templates to based on type of project that user wants to create, generate different projects ([esbuild](https://github.com/evanw/esbuild) for projects without decorators, tsc compiler, ...)
-- [ ] change rollup to use dist folder instead of compiling typescript files, that hopefully lead more consistency between dev and prod environment.
 - [ ] add [boxednode](https://github.com/mongodb-js/boxednode) as another choice for create single executable file and add [compiler caching](https://github.com/mongodb-js/boxednode/issues/15#issuecomment-789917717) for speedup compile time.
 - [ ] add please wait... in initial of the process
 - [ ] run test, format, lint before publish
