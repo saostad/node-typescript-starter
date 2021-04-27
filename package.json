@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "3.1.6",
+  "version": "3.1.7",
   "description": "Production ready starter for typescript node project",
   "repository": {
     "type": "git",
@@ -52,30 +52,30 @@
     "delay": "1000"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.22",
-    "@types/node": "^14.14.37",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.0.1",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "auto-changelog": "^2.2.1",
     "colors": "^1.4.0",
-    "eslint": "^7.24.0",
-    "eslint-config-prettier": "^8.2.0",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "jest": "^26.6.3",
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
-    "pkg": "^4.5.1",
+    "pkg": "^5.1.0",
     "prettier": "^2.2.1",
     "rimraf": "^3.0.2",
-    "snyk": "^1.538.0",
+    "snyk": "^1.570.0",
     "strip-json-comments": "^3.1.1",
-    "ts-jest": "^26.5.4",
-    "typedoc": "^0.20.35",
+    "ts-jest": "^26.5.5",
+    "typedoc": "^0.20.36",
     "typescript": "^4.2.4"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "fast-node-logger": "^1.4.12",
-    "keytar": "^7.6.0"
+    "fast-node-logger": "^1.4.13",
+    "keytar": "^7.7.0"
   }
 }
