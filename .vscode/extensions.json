@@ -18,7 +18,8 @@
     "mechatroner.rainbow-csv",
     "gruntfuggly.todo-tree",
     "vscode-icons-team.vscode-icons",
-    "redhat.vscode-yaml"
+    "redhat.vscode-yaml",
+    "meganrogge.template-string-converter"
   ],
   // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
   "unwantedRecommendations": []
