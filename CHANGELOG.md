@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v3.2.0](https://github.com/saostad/node-typescript-starter/compare/v3.1.8...v3.2.0)
+
+> 11 May 2021
+
+- feat: minimap is disabled by default. [`a2cc4a9`](https://github.com/saostad/node-typescript-starter/commit/a2cc4a96f8e989e89a6076bff326574fc7f71c78)
+- doc: change log [`75e1ff1`](https://github.com/saostad/node-typescript-starter/commit/75e1ff11d3e044d8b1b511a659bca75bd255e9e6)
+
 #### [v3.1.8](https://github.com/saostad/node-typescript-starter/compare/v3.1.7...v3.1.8)
 
 > 28 April 2021
