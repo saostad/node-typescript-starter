@@ -8,5 +8,7 @@
     "prestart",
     "snyk"
   ],
-  "gitdoc.enabled": false
+  "gitdoc.enabled": false,
+  "editor.minimap.enabled": false,
+  "workbench.sideBar.location": "right"
 }

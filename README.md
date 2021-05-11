@@ -14,7 +14,9 @@ OR
 
 ### Notice:
 
-If you don't want to open the project folder in VSCode, You can ignore the 'VSCode' parameter.
+- If you don't want to open the project folder in VSCode, You can ignore the 'VSCode' parameter.
+- minimap is disabled by default.
+- workbench sidebar is in right side of screen.
 
 ## Commands
 
