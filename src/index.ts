@@ -1,8 +1,9 @@
-import dotenv from "dotenv";
-dotenv.config();
+import { config as loadEnvVars } from "dotenv";
 import { writeLog } from "fast-node-logger";
 import type { NodeMode } from "./typings/node/mode";
 import { createLoggerInstance, getCredential } from "./helpers/util";
+
+loadEnvVars();
 
 /** server mode base on process.env.NODE_ENV */
 let nodeMode: NodeMode = process.env.NODE_ENV || "production";
