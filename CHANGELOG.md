@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v3.3.0](https://github.com/saostad/node-typescript-starter/compare/v3.2.0...v3.3.0)
+
+> 17 May 2021
+
+- feat: added runtime mussure to logs [`39dd45a`](https://github.com/saostad/node-typescript-starter/commit/39dd45a551cfd2f2f115f2bd0400f4c928a870a8)
+- doc: change log [`0cfcdc2`](https://github.com/saostad/node-typescript-starter/commit/0cfcdc2f9141c69a405890a4bcd132087fbb0266)
+- refactor: load dotenv variables more explicite [`6398157`](https://github.com/saostad/node-typescript-starter/commit/63981575ca039476fcc5113da2edbe730bc02426)
+
 #### [v3.2.0](https://github.com/saostad/node-typescript-starter/compare/v3.1.8...v3.2.0)
 
 > 11 May 2021
