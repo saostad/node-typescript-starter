@@ -15,7 +15,7 @@ export async function getCredential(targetName: string) {
 export async function createLoggerInstance(nodeMode: NodeMode) {
   /** ready to use instance of logger */
   const logger = await createLogger({
-    level: nodeMode === "development" ? "trace" : "warn",
+    level: nodeMode === "development" ? "trace" : "info",
     prettyPrint: { colorize: true, translateTime: " yyyy-mm-dd HH:MM:ss" },
     logDir: path.join(process.cwd(), "logs"),
     retentionTime: nodeMode === "development" ? 360000 : undefined,
