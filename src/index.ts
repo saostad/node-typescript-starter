@@ -34,6 +34,15 @@ export async function main() {
   return process.env.MY_SECRET; // this line is just for passing test, you can remove it in your app
 }
 
-main().catch((err: Error) => {
-  writeLog(err, { level: "error", stdout: true });
-});
+const hrstart = process.hrtime();
+main()
+  .then(() => {
+    const hrend = process.hrtime(hrstart);
+    writeLog(`Execution time ${hrend[0]}s ${hrend[1] / 1000000}ms`, {
+      level: "info",
+      stdout: true,
+    });
+  })
+  .catch((err: Error) => {
+    writeLog(err, { level: "error", stdout: true });
+  });
