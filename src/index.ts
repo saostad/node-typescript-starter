@@ -3,6 +3,9 @@ import { writeLog } from "fast-node-logger";
 import type { NodeMode } from "./typings/node/mode";
 import { createLoggerInstance, getCredential } from "./helpers/util";
 
+/* place holder for execution time measuring **/
+const hrstart = process.hrtime();
+/** load process.env variables from .env file */
 loadEnvVars();
 
 /** server mode base on process.env.NODE_ENV */
@@ -34,15 +37,14 @@ export async function main() {
   return process.env.MY_SECRET; // this line is just for passing test, you can remove it in your app
 }
 
-const hrstart = process.hrtime();
-main()
-  .then(() => {
-    const hrend = process.hrtime(hrstart);
-    writeLog(`Execution time ${hrend[0]}s ${hrend[1] / 1000000}ms`, {
-      level: "info",
-      stdout: true,
-    });
-  })
-  .catch((err: Error) => {
-    writeLog(err, { level: "error", stdout: true });
+main().catch((err: Error) => {
+  writeLog(err, { level: "error", stdout: true });
+});
+
+process.on("beforeExit", (code) => {
+  const hrend = process.hrtime(hrstart);
+  writeLog(`Execution time ${hrend[0]}s ${hrend[1] / 1000000}ms`, {
+    level: "info",
+    stdout: true,
   });
+});
