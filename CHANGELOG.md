@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v3.3.1](https://github.com/saostad/node-typescript-starter/compare/v3.3.0...v3.3.1)
+
+> 17 May 2021
+
+- fix: execution time measuring async bug [`fe11421`](https://github.com/saostad/node-typescript-starter/commit/fe114219ccac4649ef3eed336948ce4b7ba827c2)
+- doc: change log [`ed0d025`](https://github.com/saostad/node-typescript-starter/commit/ed0d025d1b14e18cf59c25d533edf8d283d2e762)
+
 #### [v3.3.0](https://github.com/saostad/node-typescript-starter/compare/v3.2.0...v3.3.0)
 
 > 17 May 2021
