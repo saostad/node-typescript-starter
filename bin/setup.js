@@ -62,7 +62,7 @@ async function setup() {
     unlinkSync(join(process.cwd(), "quick-start.gif"));
     unlinkSync(join(process.cwd(), "CHANGELOG.md"));
     unlinkSync(join(process.cwd(), "README.md"));
-    unlinkSync(join(process.cwd(), "bin", "setup"));
+    unlinkSync(join(process.cwd(), "bin", "setup.js"));
     rmdirSync(join(process.cwd(), "bin"));
 
     await runShellCmd(`git init && git add . && git commit -am "init commit"`);
