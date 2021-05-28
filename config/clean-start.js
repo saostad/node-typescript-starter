@@ -17,17 +17,23 @@ const compilerOptionsRaw = readFileSync(compilerOptionsPath, {
   encoding: "utf-8",
 });
 
-const { compilerOptions } = JSON.parse(stripJsonComments(compilerOptionsRaw));
+const configFileContent = JSON.parse(stripJsonComments(compilerOptionsRaw));
 
-const outDir = join(process.cwd(), compilerOptions.outDir);
+const outDir = join(process.cwd(), configFileContent.compilerOptions.outDir);
 
 rimraf.sync(outDir);
 
-const program = ts.createProgram([projectPath], {
-  ...compilerOptions,
-  moduleResolution: ts.ModuleResolutionKind.NodeJs,
-  tsBuildInfoFile: join(outDir, "tsconfig.tsbuildinfo"),
-});
+const compilerOptions = ts.convertCompilerOptionsFromJson(
+  configFileContent.compilerOptions,
+);
+
+if (compilerOptions.errors.length !== 0) {
+  console.error(compilerOptions.errors);
+  throw new Error("error reading typescript compiler options");
+}
+
+const program = ts.createProgram([projectPath], compilerOptions.options);
+
 const emitResult = program.emit();
 
 const allDiagnostics = ts

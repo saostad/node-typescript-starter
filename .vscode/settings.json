@@ -8,7 +8,8 @@
     "keytar",
     "precompile",
     "prestart",
-    "snyk"
+    "snyk",
+    "tsbuildinfo"
   ],
   "gitdoc.enabled": false,
   "editor.minimap.enabled": false,
