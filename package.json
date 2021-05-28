@@ -25,7 +25,7 @@
     "precompile": "npm-run-all -s clean tsc",
     "compile": "node --trace-warnings ./config/compile.js",
     "tsc": "tsc",
-    "prepublishOnly": "npm-run-all -s tsc vulnerability-scan gen-docs",
+    "prepublishOnly": "npm-run-all -s test tsc vulnerability-scan gen-docs",
     "postpublish": "npm-run-all -s tag gen-changelog",
     "predocker:build": "tsc",
     "docker:build": "node ./config/docker-build.js",
