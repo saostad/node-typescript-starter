@@ -2,6 +2,7 @@
   "name": "create-ts-starter",
   "version": "3.3.1",
   "description": "Production ready starter for typescript node project",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/saostad/node-typescript-starter.git"
@@ -28,13 +29,13 @@
     "postpublish": "npm-run-all -s tag gen-changelog",
     "predocker:build": "tsc",
     "docker:build": "node ./config/docker-build.js",
-    "index:inspect": "node --inspect --trace-warnings --unhandled-rejections=strict dist/index.js",
-    "index": "node --trace-warnings --unhandled-rejections=strict dist/index.js",
+    "index:inspect": "node --inspect --trace-warnings --es-module-specifier-resolution=node --unhandled-rejections=strict dist/index.js",
+    "index": "node --trace-warnings --es-module-specifier-resolution=node --unhandled-rejections=strict dist/index.js",
     "tsc:watch": "tsc --watch --preserveWatchOutput",
     "dev:monitor": "set NODE_ENV=development&& nodemon --delay 2.5 --watch dist --exec \"npm run index\"",
     "dev": "npm-run-all -p -c tsc:watch dev:monitor",
     "start": "node ./config/clean-start.js && npm run dev",
-    "prod": "set NODE_ENV=production&& node --trace-warnings --unhandled-rejections=strict dist/index.js"
+    "prod": "set NODE_ENV=production&& node  --es-module-specifier-resolution=node --trace-warnings --unhandled-rejections=strict dist/index.js"
   },
   "keywords": [
     "node",

@@ -1,6 +1,3 @@
-import { main } from "./index";
-
-test("process.env", async () => {
-  const result = await main();
-  expect(result).toBe("Hellooooo");
+test("my test", async () => {
+  expect(1).toBe(1);
 });

@@ -5,27 +5,28 @@
  * - print compile error messages (not break like default behaviour of compiler)
  */
 
-const ts = require("typescript");
-const path = require("path");
-const fs = require("fs");
-const stripJsonComments = require("strip-json-comments");
-const rimraf = require("rimraf");
+import ts from "typescript";
+import { join } from "path";
+import { readFileSync } from "fs";
+import stripJsonComments from "strip-json-comments";
+import rimraf from "rimraf";
 
-const projectPath = path.join(process.cwd(), "src", "index.ts");
-const compilerOptionsPath = path.join(process.cwd(), "tsconfig.json");
-const compilerOptionsRaw = fs.readFileSync(compilerOptionsPath, {
+const projectPath = join(process.cwd(), "src", "index.ts");
+const compilerOptionsPath = join(process.cwd(), "tsconfig.json");
+const compilerOptionsRaw = readFileSync(compilerOptionsPath, {
   encoding: "utf-8",
 });
 
 const { compilerOptions } = JSON.parse(stripJsonComments(compilerOptionsRaw));
 
-const outDir = path.join(process.cwd(), compilerOptions.outDir);
+const outDir = join(process.cwd(), compilerOptions.outDir);
 
 rimraf.sync(outDir);
 
 const program = ts.createProgram([projectPath], {
   ...compilerOptions,
-  tsBuildInfoFile: path.join(outDir, "tsconfig.tsbuildinfo"),
+  moduleResolution: ts.ModuleResolutionKind.NodeJs,
+  tsBuildInfoFile: join(outDir, "tsconfig.tsbuildinfo"),
 });
 const emitResult = program.emit();
 

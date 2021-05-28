@@ -1,10 +1,10 @@
 import { createLogger } from "fast-node-logger";
 import path from "path";
 import { NodeMode } from "../typings/node/mode";
-import { findCredentials } from "keytar";
+import keytar from "keytar";
 
 export async function getCredential(targetName: string) {
-  const [myCred] = await findCredentials(targetName);
+  const [myCred] = await keytar.findCredentials(targetName);
   return {
     ...myCred,
     // eslint-disable-next-line no-control-regex
