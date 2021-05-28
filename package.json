@@ -52,6 +52,21 @@
     ],
     "delay": "1000"
   },
+  "jest": {
+    "preset": "ts-jest/presets/default-esm",
+    "globals": {
+      "ts-jest": {
+        "useESM": true
+      }
+    },
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.+(ts|tsx|js)",
+      "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    ]
+  },
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^15.6.1",
@@ -59,7 +74,6 @@
     "@typescript-eslint/parser": "^4.25.0",
     "auto-changelog": "^2.3.0",
     "colors": "^1.4.0",
-    "dotenv": "^10.0.0",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
@@ -76,6 +90,7 @@
     "typescript": "^4.3.2"
   },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "fast-node-logger": "^1.4.13",
     "keytar": "^7.7.0"
   }
