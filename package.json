@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Production ready starter for typescript node project",
   "type": "module",
   "repository": {

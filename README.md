@@ -73,7 +73,7 @@ OR
 
 - [ ] add error handling [best practices](https://www.youtube.com/watch?v=62ZRPJkHOX0&list=WL&index=10&t=0s)
 - [ ] [docker best practices](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4)
-- [ ] add entry for other builds (e.g. (esm)[https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c?s=03], browser, ...)
+- [ ] add entry for other builds (e.g. [esm](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c?s=03), browser, ...)
 - [ ] fix failures when git is not installed on the host system.
 - [ ] add templates to based on type of project that user wants to create, generate different projects ([esbuild](https://github.com/evanw/esbuild) for projects without decorators, tsc compiler, ...)
 - [ ] add please wait... in initial of the process
