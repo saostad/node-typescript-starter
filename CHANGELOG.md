@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v4.0.3](https://github.com/saostad/node-typescript-starter/compare/v4.0.3-beta02...v4.0.3)
+
+> 28 May 2021
+
+- doc: change log [`f6db1f8`](https://github.com/saostad/node-typescript-starter/commit/f6db1f855b5e4b8a3b997cfcf9adc9ac8ffc9cdf)
+- fix: npx usage bug [`680de08`](https://github.com/saostad/node-typescript-starter/commit/680de08877f36e937209a477aaba1e3de5038467)
+
 #### [v4.0.3-beta02](https://github.com/saostad/node-typescript-starter/compare/v4.0.3-beta01...v4.0.3-beta02)
 
 > 28 May 2021
