@@ -1,7 +1,11 @@
-const fs = require("fs");
-const path = require("path");
+import { copyFileSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
 
-const configFilePathSrc = path.join(__dirname, "_config.yml");
-const configFilePathDest = path.join(process.cwd(), "docs", "_config.yml");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
-fs.copyFileSync(configFilePathSrc, configFilePathDest);
+const configFilePathSrc = join(__dirname, "_config.yml");
+const configFilePathDest = join(process.cwd(), "docs", "_config.yml");
+
+copyFileSync(configFilePathSrc, configFilePathDest);

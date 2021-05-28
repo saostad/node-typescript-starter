@@ -67,15 +67,13 @@ OR
 - [x] [nodemon](https://github.com/remy/nodemon)
 - [x] [colors](https://www.npmjs.com/package/colors)
 - [x] [Docker](https://www.docker.com/)
+- [x] [load-json-file](https://www.npmjs.com/package/load-json-file)
 
 ## TODO:
 
 - [ ] add error handling [best practices](https://www.youtube.com/watch?v=62ZRPJkHOX0&list=WL&index=10&t=0s)
-- [ ] remove startup overhead to have fastest start up
 - [ ] [docker best practices](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4)
 - [ ] add entry for other builds (e.g. (esm)[https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c?s=03], browser, ...)
 - [ ] fix failures when git is not installed on the host system.
 - [ ] add templates to based on type of project that user wants to create, generate different projects ([esbuild](https://github.com/evanw/esbuild) for projects without decorators, tsc compiler, ...)
-- [ ] add [boxednode](https://github.com/mongodb-js/boxednode) as another choice for create single executable file and add [compiler caching](https://github.com/mongodb-js/boxednode/issues/15#issuecomment-789917717) for speedup compile time.
 - [ ] add please wait... in initial of the process
-- [ ] run test, format, lint before publish

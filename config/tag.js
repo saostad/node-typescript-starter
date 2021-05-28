@@ -1,9 +1,13 @@
-const util = require("util");
+import { promisify } from "util";
+import { exec } from "child_process";
+import loadJsonFile from "load-json-file";
+import { join } from "path";
 
-const exec = util.promisify(require("child_process").exec);
+const execPromise = promisify(exec);
+
 async function runShellCmd(command) {
   try {
-    const { stdout, stderr } = await exec(command);
+    const { stdout, stderr } = await execPromise(command);
     console.log(stdout);
     console.log(stderr);
   } catch (err) {
@@ -11,7 +15,7 @@ async function runShellCmd(command) {
   }
 }
 
-const version = require("../package.json").version;
+const { version } = loadJsonFile.sync(join(process.cwd(), "package.json"));
 
 async function tag() {
   await runShellCmd(`git add .`);

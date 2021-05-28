@@ -1,18 +1,18 @@
 /* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-var-requires */
 "use strict";
-const path = require("path");
-const fs = require("fs");
-const dotenv = require("dotenv");
-const { execSync } = require("child_process");
+import { join } from "path";
+import { readFileSync, writeFileSync } from "fs";
+import { config } from "dotenv";
+import { execSync } from "child_process";
 
 /**@step update Dockerfile */
-const { parsed: dotEnvData } = dotenv.config({
-  path: path.join(__dirname, "..", ".env"),
+const { parsed: dotEnvData } = config({
+  path: join(__dirname, "..", ".env"),
 });
 
-const dockerFilePath = path.join(__dirname, "Dockerfile");
-const dockerFileData = fs.readFileSync(dockerFilePath, { encoding: "utf-8" });
+const dockerFilePath = join(__dirname, "Dockerfile");
+const dockerFileData = readFileSync(dockerFilePath, { encoding: "utf-8" });
 
 /**@step remove comments, ENV & EXPOSE lines
  * we will write those line with new data from .env file!
@@ -52,13 +52,13 @@ dockerFileLines.unshift(
 
 const dockerFileModifiedData = dockerFileLines.join("\n");
 
-fs.writeFileSync(dockerFilePath, dockerFileModifiedData, { encoding: "utf-8" });
+writeFileSync(dockerFilePath, dockerFileModifiedData, { encoding: "utf-8" });
 
 console.log(`Writing Dockerfile ${dockerFilePath}`);
 
 /**@step run build command */
-const { version } = require(path.join(process.cwd(), "package.json"));
-const { name } = require(path.join(process.cwd(), "package.json"));
+const { version } = require(join(process.cwd(), "package.json"));
+const { name } = require(join(process.cwd(), "package.json"));
 
 const buildCmd = `docker build --pull --rm -f "${dockerFilePath}" -t ${name}:${version} "."`;
 
