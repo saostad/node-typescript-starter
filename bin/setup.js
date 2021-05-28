@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-const util = require("util");
-const path = require("path");
-const fs = require("fs");
+import { promisify } from "util";
+import { join } from "path";
+import { appendFileSync, unlinkSync, rmdirSync } from "fs";
+import { exec } from "child_process";
 
 /** Steps:
  * 1- create folder
@@ -19,7 +20,7 @@ if (process.argv.slice(2).length > 0) {
   folderName = process.argv.slice(2)[0];
 }
 
-const folderPath = path.join(initWorkingDirectory, folderName);
+const folderPath = join(initWorkingDirectory, folderName);
 
 let runVsCode = false;
 if (process.argv.slice(2).length > 1) {
@@ -29,10 +30,10 @@ if (process.argv.slice(2).length > 1) {
 const repo = "https://github.com/saostad/node-typescript-starter.git";
 console.log(`downloading files from repo ${repo}`);
 
-const exec = util.promisify(require("child_process").exec);
+const execPromise = promisify(exec);
 async function runShellCmd(command) {
   try {
-    const { stdout, stderr } = await exec(command);
+    const { stdout, stderr } = await execPromise(command);
     console.log(stdout);
     console.log(stderr);
   } catch {
@@ -54,15 +55,15 @@ async function setup() {
     await runShellCmd(`npx rimraf ./.git`);
     console.log(`old .git folder deleted successfully!`);
 
-    fs.appendFileSync(".gitignore", "\r\ndist", "utf8");
-    fs.appendFileSync(".gitignore", "\r\n.env", "utf8");
+    appendFileSync(".gitignore", "\r\ndist", "utf8");
+    appendFileSync(".gitignore", "\r\n.env", "utf8");
 
     /** remove extra files and folders from disk. we don't need it anymore */
-    fs.unlinkSync(path.join(process.cwd(), "quick-start.gif"));
-    fs.unlinkSync(path.join(process.cwd(), "CHANGELOG.md"));
-    fs.unlinkSync(path.join(process.cwd(), "README.md"));
-    fs.unlinkSync(path.join(process.cwd(), "bin", "setup"));
-    fs.rmdirSync(path.join(process.cwd(), "bin"));
+    unlinkSync(join(process.cwd(), "quick-start.gif"));
+    unlinkSync(join(process.cwd(), "CHANGELOG.md"));
+    unlinkSync(join(process.cwd(), "README.md"));
+    unlinkSync(join(process.cwd(), "bin", "setup"));
+    rmdirSync(join(process.cwd(), "bin"));
 
     await runShellCmd(`git init && git add . && git commit -am "init commit"`);
     console.log(`new git repo initialized successfully!`);

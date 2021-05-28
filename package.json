@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "4.0.2",
+  "version": "4.0.3-beta01",
   "description": "Production ready starter for typescript node project",
   "type": "module",
   "repository": {
@@ -9,7 +9,7 @@
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "bin": "bin/setup",
+  "bin": "bin/setup.js",
   "scripts": {
     "format": "prettier --check \"src/**/*.ts\" --write",
     "lint": "eslint --ext \".ts,.js\" src --quiet",
