@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+### [v4.0.1](https://github.com/saostad/node-typescript-starter/compare/v3.3.1...v4.0.1)
+
+> 28 May 2021
+
+- **Breaking change:** breaking: typescript target ES2018 [`7781a03`](https://github.com/saostad/node-typescript-starter/commit/7781a03de097af30ea8830c80529b4b1f6fab3b2)
+- pkg: updated [`50b4a7f`](https://github.com/saostad/node-typescript-starter/commit/50b4a7f334184d274f0b18ee30ed644a43ffe095)
+- feat: type: "module is working [`92b4f4a`](https://github.com/saostad/node-typescript-starter/commit/92b4f4afff00475c99ac12acfbcd5e0605c67d8e)
+
 #### [v3.3.1](https://github.com/saostad/node-typescript-starter/compare/v3.3.0...v3.3.1)
 
 > 17 May 2021
@@ -499,23 +507,23 @@ All notable changes to this project will be documented in this file. Dates are d
 - doc: change-log [`0ef0f1c`](https://github.com/saostad/node-typescript-starter/commit/0ef0f1ca75dd3639c2bb6b485f0661cdc5689380)
 - fix: changelog script [`34e8e18`](https://github.com/saostad/node-typescript-starter/commit/34e8e18e6e323c160e20bdd475b3665297fb9f93)
 
-#### [v2.3.1](https://github.com/saostad/node-typescript-starter/compare/v2.3.0...v2.3.1)
-
-> 22 April 2020
-
-- fix: start script [`4d66710`](https://github.com/saostad/node-typescript-starter/commit/4d66710d61dec0aa8cd8107793cad65a53e1f9ea)
-
-#### [v2.3.0](https://github.com/saostad/node-typescript-starter/compare/2.3.0...v2.3.0)
+#### [v2.3.1](https://github.com/saostad/node-typescript-starter/compare/2.3.0...v2.3.1)
 
 > 22 April 2020
 
 - middle: adding changelog generator [`1bf2f5b`](https://github.com/saostad/node-typescript-starter/commit/1bf2f5b8e7707fd519a6e320d0aec1c6ea477e7a)
 - middle: setup flow to publish and changelog generation [`5f1858f`](https://github.com/saostad/node-typescript-starter/commit/5f1858fedd932d5cfb00d0da7c799ef0e750522d)
-- fix: verson number in tag [`0180606`](https://github.com/saostad/node-typescript-starter/commit/01806064cdcd32d9659565c910c2f56b5ab8e767)
+- fix: start script [`4d66710`](https://github.com/saostad/node-typescript-starter/commit/4d66710d61dec0aa8cd8107793cad65a53e1f9ea)
 
-#### [2.3.0](https://github.com/saostad/node-typescript-starter/compare/v2.3.0-beta3...2.3.0)
+#### [2.3.0](https://github.com/saostad/node-typescript-starter/compare/v2.3.0...2.3.0)
 
 > 22 April 2020
+
+#### [v2.3.0](https://github.com/saostad/node-typescript-starter/compare/v2.3.0-beta3...v2.3.0)
+
+> 22 April 2020
+
+- feat: changelog generatin added [`d22aca3`](https://github.com/saostad/node-typescript-starter/commit/d22aca36d41fa76b1dddd64378e4ab085e29e9d3)
 
 #### [v2.3.0-beta3](https://github.com/saostad/node-typescript-starter/compare/v2.3.0-beta2...v2.3.0-beta3)
 
@@ -530,17 +538,17 @@ All notable changes to this project will be documented in this file. Dates are d
 - middle: setup flow to publish and changelog generation [`5f1858f`](https://github.com/saostad/node-typescript-starter/commit/5f1858fedd932d5cfb00d0da7c799ef0e750522d)
 - fix: verson number in tag [`0180606`](https://github.com/saostad/node-typescript-starter/commit/01806064cdcd32d9659565c910c2f56b5ab8e767)
 
-#### [2.3.0-beta1](https://github.com/saostad/node-typescript-starter/compare/v2.2.0...2.3.0-beta1)
+#### [2.3.0-beta1](https://github.com/saostad/node-typescript-starter/compare/2.2.0...2.3.0-beta1)
+
+> 22 April 2020
+
+#### [2.2.0](https://github.com/saostad/node-typescript-starter/compare/v2.2.0...2.2.0)
 
 > 22 April 2020
 
 - pub: 2.2.0 [`4a562c7`](https://github.com/saostad/node-typescript-starter/commit/4a562c70f9695adc00e454ceafea22f3653a3ee4)
 
-#### [v2.2.0](https://github.com/saostad/node-typescript-starter/compare/2.2.0...v2.2.0)
-
-> 22 April 2020
-
-#### [2.2.0](https://github.com/saostad/node-typescript-starter/compare/v2.1.6...2.2.0)
+#### [v2.2.0](https://github.com/saostad/node-typescript-starter/compare/v2.1.6...v2.2.0)
 
 > 22 April 2020
 
