@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v4.1.0](https://github.com/saostad/node-typescript-starter/compare/v4.0.4...v4.1.0)
+
+> 10 June 2021
+
+- doc: change log [`3bf3d3b`](https://github.com/saostad/node-typescript-starter/commit/3bf3d3b776b9bed1c55bb432fcba7b0a6e24b770)
+- feat: added wmaurer.change-case to recommended extensions [`0a53828`](https://github.com/saostad/node-typescript-starter/commit/0a53828bb350d1bdc0a0cd3c293e9efb83b0d865)
+
 #### [v4.0.4](https://github.com/saostad/node-typescript-starter/compare/v4.0.3...v4.0.4)
 
 > 10 June 2021
