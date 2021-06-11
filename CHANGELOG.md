@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v4.0.4](https://github.com/saostad/node-typescript-starter/compare/v4.0.3...v4.0.4)
+
+> 10 June 2021
+
+- pkg: updated [`912cb46`](https://github.com/saostad/node-typescript-starter/commit/912cb46bd6498eb6a40e86e4f109bf6eff8ce509)
+- doc: change log [`3531afa`](https://github.com/saostad/node-typescript-starter/commit/3531afa2eb135792dab997098c0eb3f599348ea0)
+- fix: npm start script not running typescript in watch mode [`d86bdcd`](https://github.com/saostad/node-typescript-starter/commit/d86bdcd87989a8621edae1b7be252ad858774f03)
+
 #### [v4.0.3](https://github.com/saostad/node-typescript-starter/compare/v4.0.3-beta02...v4.0.3)
 
 > 28 May 2021
