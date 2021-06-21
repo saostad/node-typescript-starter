@@ -5,6 +5,16 @@ import { createLoggerInstance, getCredential } from "./helpers/util";
 
 /* place holder for execution time measuring **/
 const hrstart = process.hrtime();
+
+process.on("beforeExit", (code) => {
+  const hrend = process.hrtime(hrstart);
+  writeLog(`Execution time ${hrend[0]}s ${hrend[1] / 1000000}ms`, {
+    level: "info",
+    stdout: true,
+  });
+  writeLog(`exiting by code ${code}!`);
+});
+
 /** load process.env variables from .env file */
 loadEnvVars();
 
@@ -29,14 +39,6 @@ const logger = await createLoggerInstance(nodeMode);
 getCredential("test_cred").then(({ account, password }) => {
   writeLog(`loaded credential: ${account}, ${password}`, {
     level: "warn",
-    stdout: true,
-  });
-});
-
-process.on("beforeExit", (code) => {
-  const hrend = process.hrtime(hrstart);
-  writeLog(`Execution time ${hrend[0]}s ${hrend[1] / 1000000}ms`, {
-    level: "info",
     stdout: true,
   });
 });
