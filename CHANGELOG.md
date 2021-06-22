@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v4.2.0](https://github.com/saostad/node-typescript-starter/compare/v4.1.0...v4.2.0)
+
+> 22 June 2021
+
+- feat: env utility function to load process.env variables or fail. [`7ac8278`](https://github.com/saostad/node-typescript-starter/commit/7ac8278472f40a70a40ce5ab058b878dcc764f5d)
+- pkg: updated [`3a6c33b`](https://github.com/saostad/node-typescript-starter/commit/3a6c33bc5f2a0ec9618c48358bbe17b0031136f8)
+- pkg: updated [`af4c51d`](https://github.com/saostad/node-typescript-starter/commit/af4c51d99947b292261c89f99419da6cc1be07fd)
+
 #### [v4.1.0](https://github.com/saostad/node-typescript-starter/compare/v4.0.4...v4.1.0)
 
 > 10 June 2021
