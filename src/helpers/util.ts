@@ -23,3 +23,13 @@ export async function createLoggerInstance(nodeMode: NodeMode) {
   logger.info(`script started in ${nodeMode} mode!`);
   return logger;
 }
+
+/**@description load specific process.env variable or fail */
+export function env(name: string){
+  const data = process.env[name]
+  if(data){
+    return data
+  }else{
+    throw new Error(`environment variable ${name} is not available!`);
+  }
+}
