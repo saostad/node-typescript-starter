@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "4.2.1",
+  "version": "4.2.2",
   "description": "Production ready starter for typescript node project",
   "type": "module",
   "repository": {
@@ -19,7 +19,7 @@
     "postgen-docs": "node ./config/github.js",
     "tag": "node ./config/tag.js",
     "auto-changelog": "auto-changelog --hide-credit --breaking-pattern \"breaking:\"",
-    "gen-changelog": "npm run auto-changelog && git add CHANGELOG.md && git commit -m \"doc: change log\"",
+    "gen-changelog": "npm run auto-changelog && git add CHANGELOG.md && git commit -m \"doc: change-log updated.\"",
     "vulnerability-scan": "node ./config/vulnerability-scan.js",
     "clean": "rimraf ./dist ./compile",
     "precompile": "npm-run-all -s clean tsc",
