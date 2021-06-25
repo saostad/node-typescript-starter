@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v4.2.1](https://github.com/saostad/node-typescript-starter/compare/v4.2.0...v4.2.1)
+
+> 24 June 2021
+
+- fix: dist folder not include in npm package [`e94f6cf`](https://github.com/saostad/node-typescript-starter/commit/e94f6cf34c02a7898391818f8541612debff07cf)
+- doc: change log [`8263582`](https://github.com/saostad/node-typescript-starter/commit/82635822203760d0c30b8be60d38d1b84e55ffb5)
+
 #### [v4.2.0](https://github.com/saostad/node-typescript-starter/compare/v4.1.0...v4.2.0)
 
 > 22 June 2021
