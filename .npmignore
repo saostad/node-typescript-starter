@@ -6,5 +6,4 @@ generated
 /src/**/*.*
 /compile/**
 /obfuscated/**/*.*
-/dist/**/*.*
 /release/**/*.*

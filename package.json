@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "Production ready starter for typescript node project",
   "type": "module",
   "repository": {
@@ -25,7 +25,7 @@
     "precompile": "npm-run-all -s clean tsc",
     "compile": "node --trace-warnings ./config/compile.js",
     "tsc": "tsc",
-    "prepublishOnly": "npm-run-all -s test tsc vulnerability-scan gen-docs",
+    "prepublishOnly": "npm-run-all -s test clean tsc vulnerability-scan gen-docs",
     "postpublish": "npm-run-all -s tag gen-changelog",
     "predocker:build": "tsc",
     "docker:build": "node ./config/docker-build.js",
@@ -81,10 +81,10 @@
     "load-json-file": "^6.2.0",
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
-    "pkg": "^5.2.1",
+    "pkg": "^5.3.0",
     "prettier": "^2.3.1",
     "rimraf": "^3.0.2",
-    "snyk": "^1.641.0",
+    "snyk": "^1.645.0",
     "strip-json-comments": "^3.1.1",
     "ts-jest": "^27.0.3",
     "typedoc": "^0.21.0",
@@ -92,7 +92,7 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "fast-node-logger": "^1.4.13",
+    "fast-node-logger": "^2.0.0",
     "keytar": "^7.7.0"
   }
 }
