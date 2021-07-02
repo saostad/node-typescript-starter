@@ -30,7 +30,7 @@
     "predocker:build": "tsc",
     "docker:build": "node ./config/docker-build.js",
     "index:inspect": "node --inspect --trace-warnings --es-module-specifier-resolution=node --unhandled-rejections=strict dist/index.js",
-    "index": "node --trace-warnings --es-module-specifier-resolution=node --unhandled-rejections=strict dist/index.js",
+    "index": "node --enable-source-maps --trace-warnings --es-module-specifier-resolution=node --unhandled-rejections=strict dist/index.js",
     "tsc:watch": "tsc --watch --preserveWatchOutput",
     "dev:monitor": "set NODE_ENV=development&& nodemon --delay 2.5 --watch dist --exec \"npm run index\"",
     "dev": "npm-run-all -p -c tsc:watch dev:monitor",
