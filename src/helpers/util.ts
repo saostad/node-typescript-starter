@@ -1,9 +1,14 @@
-import { createLogger } from "fast-node-logger";
+import { createLogger, Logger } from "fast-node-logger";
 import path from "path";
 import { NodeMode } from "../typings/node/mode";
 import keytar from "keytar";
 
-export async function getCredential(targetName: string) {
+type Credential = {
+  account: string;
+  password: string;
+};
+
+export async function getCredential(targetName: string): Promise<Credential> {
   const [myCred] = await keytar.findCredentials(targetName);
   return {
     ...myCred,
@@ -12,7 +17,9 @@ export async function getCredential(targetName: string) {
   };
 }
 
-export async function createLoggerInstance(nodeMode: NodeMode) {
+export async function createLoggerInstance(
+  nodeMode: NodeMode,
+): Promise<Logger> {
   /** ready to use instance of logger */
   const logger = await createLogger({
     level: nodeMode === "development" ? "trace" : "info",
@@ -25,11 +32,11 @@ export async function createLoggerInstance(nodeMode: NodeMode) {
 }
 
 /**@description load specific process.env variable or fail */
-export function env(name: string){
-  const data = process.env[name]
-  if(data){
-    return data
-  }else{
+export function env(name: string): string {
+  const data = process.env[name];
+  if (data) {
+    return data;
+  } else {
     throw new Error(`environment variable ${name} is not available!`);
   }
 }
