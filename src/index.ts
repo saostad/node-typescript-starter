@@ -27,18 +27,20 @@ if (process.env.NODE_ENV) {
 
 /**@step create a logger instance */
 /**@description logger instance to store logs in files located in ./logs directory */
-const logger = await createLoggerInstance(nodeMode);
+(async () => {
+  const logger = await createLoggerInstance(nodeMode);
 
-/**@note put your code below here */
+  /**@note put your code below here */
 
-/**
- * @BEST_PRACTICES how to store credential out of source code
- * - use operating system credential manager
- * - use .env file located in project root directory
- */
-getCredential("test_cred").then(({ account, password }) => {
-  writeLog(`loaded credential: ${account}, ${password}`, {
-    level: "warn",
-    stdout: true,
+  /**
+   * @BEST_PRACTICES how to store credential out of source code
+   * - use operating system credential manager
+   * - use .env file located in project root directory
+   */
+  getCredential("test_cred").then(({ account, password }) => {
+    writeLog(`loaded credential: ${account}, ${password}`, {
+      level: "warn",
+      stdout: true,
+    });
   });
-});
+})();

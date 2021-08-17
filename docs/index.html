@@ -61,16 +61,35 @@
 				<a href="#node-typescript-starter" id="node-typescript-starter" style="color: inherit; text-decoration: none;">
 					<h1>node typescript starter</h1>
 				</a>
-				<a href="#production-ready-starter-for-typescript-node-project" id="production-ready-starter-for-typescript-node-project" style="color: inherit; text-decoration: none;">
-					<h3>Production ready starter for typescript node project</h3>
+				<a href="#production-ready-starter-for-typescript-node-projects" id="production-ready-starter-for-typescript-node-projects" style="color: inherit; text-decoration: none;">
+					<h3>Production ready starter for typescript-node projects</h3>
 				</a>
 				<a href="#quick-start" id="quick-start" style="color: inherit; text-decoration: none;">
 					<h1>Quick Start</h1>
 				</a>
 				<p><code>npx create-ts-starter PROJECT_NAME Vscode</code></p>
 				<p><img src="quick-start.gif" alt=""></p>
-				<p>OR</p>
-				<p><code>npm init ts-starter PROJECT_NAME VSCode</code></p>
+				<a href="#functionalities" id="functionalities" style="color: inherit; text-decoration: none;">
+					<h2>Functionalities</h2>
+				</a>
+				<ul>
+					<li>create ESM and CommonJS modules and publish to npm registry.</li>
+					<li>configured to support top-level-await (look at Caveat section).</li>
+					<li>scan for vulnerabilities before publishing to registry.</li>
+					<li>auto tag the git commit at publish time.</li>
+					<li>generate changelog.md file after each publishes.</li>
+					<li>run tests with jest.</li>
+					<li>load environment variables from .env file.</li>
+					<li>load credentials from host operation system&#39;s credential manger.</li>
+					<li>ready to run in a docker environment.</li>
+					<li>write logs in .log file in the logs directory with customizable log rotation policy.</li>
+					<li>generate API documentation in docs folder of the root project directory.</li>
+					<li>compile the app to an executable single file.</li>
+					<li>restart the process after modifying ts files.</li>
+					<li>dies at unhandled errors (this is a very good strategy for production - docker will take care of restart the program after exit).</li>
+					<li>type-def for process.env variables.</li>
+					<li>recommends useful <a href="https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions">vscode extensions</a>.</li>
+				</ul>
 				<a href="#notice" id="notice" style="color: inherit; text-decoration: none;">
 					<h3>Notice:</h3>
 				</a>
@@ -84,37 +103,16 @@
 				</a>
 				<ul>
 					<li><code>npm start</code> to start the development environment</li>
+					<li><code>npm run compile</code> to compile to single executable file</li>
+					<li><code>npm run prod</code> to run in production</li>
 					<li><code>npm run test</code> to run tests</li>
 					<li><code>npm run test:watch</code> to run tests in watch mode</li>
 					<li><code>npm run format</code> to format with prettier</li>
 					<li><code>npm run lint</code> to lint with eslint</li>
 					<li><code>npm run gen-docs</code> to generate documentations website</li>
 					<li><code>npm run vulnerability-scan</code> to scan for vulnerabilities</li>
-					<li><code>npm run prod</code> to run in production</li>
-					<li><code>npm run compile</code> to compile to single executable file</li>
 					<li><code>npm run docker:build</code> to create docker image with data from <code>.env</code> file and version # from <code>package.json</code></li>
 					<li><code>docker-compose up</code> to run in docker environment</li>
-				</ul>
-				<a href="#functionalities" id="functionalities" style="color: inherit; text-decoration: none;">
-					<h2>Functionalities</h2>
-				</a>
-				<ul>
-					<li>pre-configured to publish or create npm module</li>
-					<li>pre-configured to scan for vulnerabilities before publishing to registry</li>
-					<li>pre-configured to git tag the commit at publish time</li>
-					<li>pre-configured to generate changelog.md file after each publishes</li>
-					<li>pre-configured to run tests with jest</li>
-					<li>pre-configured to load environment variables from .env file</li>
-					<li>pre-configured to load credentials from host operation system&#39;s credential manger</li>
-					<li>pre-configured to run in a docker environment</li>
-					<li>pre-configured to write logs in .log file in the logs directory with default log rotation of 7 days</li>
-					<li>pre-configured to generate API documentation in docs folder of the root project directory</li>
-					<li>pre-configured to compile the app to an executable single file</li>
-					<li>pre-configured to connect Chrome DevTools in a development environment</li>
-					<li>restart the process after modifying ts files</li>
-					<li>dies at unhandled errors (this is a very good strategy for production - docker will take care of restart the program after exit)</li>
-					<li>type-def for process.env variables</li>
-					<li>pre-configured to <a href="https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions">recommend vscode extensions</a></li>
 				</ul>
 				<a href="#powered-by-credit" id="powered-by-credit" style="color: inherit; text-decoration: none;">
 					<h2>Powered By (Credit):</h2>
@@ -134,18 +132,24 @@
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/remy/nodemon">nodemon</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/colors">colors</a></li>
 					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.docker.com/">Docker</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/load-json-file">load-json-file</a></li>
+					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/wait-on">wait-on</a></li>
 				</ul>
 				<a href="#todo" id="todo" style="color: inherit; text-decoration: none;">
 					<h2>TODO:</h2>
 				</a>
 				<ul>
-					<li><input disabled="" type="checkbox"> add error handling <a href="https://www.youtube.com/watch?v=62ZRPJkHOX0&amp;list=WL&amp;index=10&amp;t=0s">best practices</a></li>
+					<li><input disabled="" type="checkbox"> improve error handling <a href="https://www.youtube.com/watch?v=62ZRPJkHOX0&amp;list=WL&amp;index=10&amp;t=0s">best practices</a></li>
 					<li><input disabled="" type="checkbox"> <a href="https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4">docker best practices</a></li>
 					<li><input disabled="" type="checkbox"> add entry for other builds (e.g. <a href="https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c?s=03">esm</a>, browser, ...)</li>
 					<li><input disabled="" type="checkbox"> fix failures when git is not installed on the host system.</li>
 					<li><input disabled="" type="checkbox"> add templates to based on type of project that user wants to create, generate different projects (<a href="https://github.com/evanw/esbuild">esbuild</a> for projects without decorators, tsc compiler, ...)</li>
 					<li><input disabled="" type="checkbox"> add please wait... in initial of the process</li>
+				</ul>
+				<a href="#caveat" id="caveat" style="color: inherit; text-decoration: none;">
+					<h2>Caveat</h2>
+				</a>
+				<ul>
+					<li>top level await <a href="https://github.com/vercel/pkg/issues/997">is not supported</a> when compiling the single executable file.</li>
 				</ul>
 			</div>
 		</div>

@@ -4,7 +4,7 @@ FROM node:12.19.0-alpine
 USER node
 RUN mkdir -p /home/node/app/logs
 COPY ["node_modules", "/home/node/app/node_modules/"]
-COPY ["dist", "/home/node/app/dist/"]
-CMD ["node", "--unhandled-rejections=strict", "/home/node/app/dist/index.js"]
+COPY ["dist-esm", "/home/node/app/dist-esm/"]
+CMD ["node", "--unhandled-rejections=strict", "/home/node/app/dist-esm/index.js"]
 
 ENV MY_SECRET=Hellooooo

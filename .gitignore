@@ -23,5 +23,5 @@ test/fixtures/test*
 compile
 out
 obfuscated
-dist
+dist*
 release

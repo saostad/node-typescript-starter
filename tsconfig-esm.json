@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig-base.json",
+  "compilerOptions": {
+    "module": "ESNext" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    "outDir": "./dist-esm" /* Redirect output structure to the directory. */ /* Enable project compilation */,
+    "tsBuildInfoFile": "./dist-esm/tsconfig.tsbuildinfo"
+  }
+}

@@ -1,6 +1,6 @@
 # node typescript starter
 
-### Production ready starter for typescript node project
+### Production ready starter for typescript-node projects
 
 # Quick Start
 
@@ -8,9 +8,24 @@
 
 ![](quick-start.gif)
 
-OR
+## Functionalities
 
-`npm init ts-starter PROJECT_NAME VSCode`
+- create ESM and CommonJS modules and publish to npm registry.
+- configured to support top-level-await (look at Caveat section).
+- scan for vulnerabilities before publishing to registry.
+- auto tag the git commit at publish time.
+- generate changelog.md file after each publishes.
+- run tests with jest.
+- load environment variables from .env file.
+- load credentials from host operation system's credential manger.
+- ready to run in a docker environment.
+- write logs in .log file in the logs directory with customizable log rotation policy.
+- generate API documentation in docs folder of the root project directory.
+- compile the app to an executable single file.
+- restart the process after modifying ts files.
+- dies at unhandled errors (this is a very good strategy for production - docker will take care of restart the program after exit).
+- type-def for process.env variables.
+- recommends useful [vscode extensions](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions).
 
 ### Notice:
 
@@ -21,35 +36,16 @@ OR
 ## Commands
 
 - `npm start` to start the development environment
+- `npm run compile` to compile to single executable file
+- `npm run prod` to run in production
 - `npm run test` to run tests
 - `npm run test:watch` to run tests in watch mode
 - `npm run format` to format with prettier
 - `npm run lint` to lint with eslint
 - `npm run gen-docs` to generate documentations website
 - `npm run vulnerability-scan` to scan for vulnerabilities
-- `npm run prod` to run in production
-- `npm run compile` to compile to single executable file
 - `npm run docker:build` to create docker image with data from `.env` file and version # from `package.json`
 - `docker-compose up` to run in docker environment
-
-## Functionalities
-
-- pre-configured to publish or create npm module
-- pre-configured to scan for vulnerabilities before publishing to registry
-- pre-configured to git tag the commit at publish time
-- pre-configured to generate changelog.md file after each publishes
-- pre-configured to run tests with jest
-- pre-configured to load environment variables from .env file
-- pre-configured to load credentials from host operation system's credential manger
-- pre-configured to run in a docker environment
-- pre-configured to write logs in .log file in the logs directory with default log rotation of 7 days
-- pre-configured to generate API documentation in docs folder of the root project directory
-- pre-configured to compile the app to an executable single file
-- pre-configured to connect Chrome DevTools in a development environment
-- restart the process after modifying ts files
-- dies at unhandled errors (this is a very good strategy for production - docker will take care of restart the program after exit)
-- type-def for process.env variables
-- pre-configured to [recommend vscode extensions](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)
 
 ## Powered By (Credit):
 
@@ -67,13 +63,17 @@ OR
 - [x] [nodemon](https://github.com/remy/nodemon)
 - [x] [colors](https://www.npmjs.com/package/colors)
 - [x] [Docker](https://www.docker.com/)
-- [x] [load-json-file](https://www.npmjs.com/package/load-json-file)
+- [x] [wait-on](https://www.npmjs.com/package/wait-on)
 
 ## TODO:
 
-- [ ] add error handling [best practices](https://www.youtube.com/watch?v=62ZRPJkHOX0&list=WL&index=10&t=0s)
+- [ ] improve error handling [best practices](https://www.youtube.com/watch?v=62ZRPJkHOX0&list=WL&index=10&t=0s)
 - [ ] [docker best practices](https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4)
 - [ ] add entry for other builds (e.g. [esm](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c?s=03), browser, ...)
 - [ ] fix failures when git is not installed on the host system.
 - [ ] add templates to based on type of project that user wants to create, generate different projects ([esbuild](https://github.com/evanw/esbuild) for projects without decorators, tsc compiler, ...)
 - [ ] add please wait... in initial of the process
+
+## Caveat
+
+- top level await [is not supported](https://github.com/vercel/pkg/issues/997) when compiling the single executable file.
