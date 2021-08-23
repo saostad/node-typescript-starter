@@ -25,8 +25,6 @@ if (process.env.NODE_ENV) {
   nodeMode = process.env.NODE_ENV;
 }
 
-/**@step create a logger instance */
-/**@description logger instance to store logs in files located in ./logs directory */
 (async () => {
   const logger = await createLoggerInstance(nodeMode);
 

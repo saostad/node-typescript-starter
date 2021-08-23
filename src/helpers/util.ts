@@ -17,6 +17,7 @@ export async function getCredential(targetName: string): Promise<Credential> {
   };
 }
 
+/**@description logger instance to store logs in files located in ./logs directory */
 export async function createLoggerInstance(
   nodeMode: NodeMode,
 ): Promise<Logger> {
