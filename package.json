@@ -54,13 +54,6 @@
   ],
   "author": "Saeid Ostad",
   "license": "MIT",
-  "nodemonConfig": {
-    "ignore": [
-      "test/*",
-      "docs/*"
-    ],
-    "delay": "1000"
-  },
   "jest": {
     "preset": "ts-jest/presets/default-esm",
     "globals": {
