@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v4.4.6](https://github.com/saostad/node-typescript-starter/compare/v4.4.5...v4.4.6)
+
+> 1 September 2021
+
+- feat: set vscode to default git editor before commit [`839099a`](https://github.com/saostad/node-typescript-starter/commit/839099af6b250c1b69d297a121c8e55e956d4b8d)
+
+#### [v4.4.5](https://github.com/saostad/node-typescript-starter/compare/v4.4.1...v4.4.5)
+
+> 1 September 2021
+
+- pkg: updated [`7b9dc5a`](https://github.com/saostad/node-typescript-starter/commit/7b9dc5acacb8e229083c27775584c301f5031987)
+- enhanced: nodemon configs [`094438d`](https://github.com/saostad/node-typescript-starter/commit/094438dc5fe3b0370ac8dc0debb66df678cdffae)
+- doc: change-log updated. [`6ba4cbf`](https://github.com/saostad/node-typescript-starter/commit/6ba4cbf1146f44dba470f4b871a33fbc0378f8bd)
+
 #### [v4.4.1](https://github.com/saostad/node-typescript-starter/compare/v4.4.0...v4.4.1)
 
 > 23 August 2021
