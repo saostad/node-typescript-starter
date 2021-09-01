@@ -1,6 +1,6 @@
 import { promisify } from "util";
 import { exec } from "child_process";
-import loadJsonFile from "load-json-file";
+import { loadJsonFile } from "load-json-file";
 import { join } from "path";
 
 const execPromise = promisify(exec);
@@ -15,11 +15,16 @@ async function runShellCmd(command) {
   }
 }
 
-const { version } = loadJsonFile.sync(join(process.cwd(), "package.json"));
+const { version } = await loadJsonFile(join(process.cwd(), "package.json"));
 
 async function tag() {
   await runShellCmd(`git add .`);
+  console.log(`File: tag.js,`, `Line: 22 => `);
+
   await runShellCmd(`git commit`);
+  console.log(`File: tag.js,`, `Line: 25 => `);
+
   await runShellCmd(`git tag v${version}`);
+  console.log(`File: tag.js,`, `Line: 28 => `);
 }
 tag();
