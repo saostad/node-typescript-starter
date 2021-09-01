@@ -18,13 +18,9 @@ async function runShellCmd(command) {
 const { version } = await loadJsonFile(join(process.cwd(), "package.json"));
 
 async function tag() {
+  await runShellCmd(`git config --global core.editor "code --wait"`);
   await runShellCmd(`git add .`);
-  console.log(`File: tag.js,`, `Line: 22 => `);
-
   await runShellCmd(`git commit`);
-  console.log(`File: tag.js,`, `Line: 25 => `);
-
   await runShellCmd(`git tag v${version}`);
-  console.log(`File: tag.js,`, `Line: 28 => `);
 }
 tag();
