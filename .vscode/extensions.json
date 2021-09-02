@@ -4,7 +4,6 @@
 
   // List of extensions which should be recommended for users of this workspace.
   "recommendations": [
-    "coenraads.bracket-pair-colorizer",
     "wmaurer.change-case",
     "streetsidesoftware.code-spell-checker",
     "randomfractalsinc.vscode-data-preview",

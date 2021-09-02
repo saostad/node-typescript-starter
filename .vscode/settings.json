@@ -2,6 +2,9 @@
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "cSpell.words": [
     "Builtins",
+    "JCJM",
+    "KISQL",
+    "auditlog",
     "boxednode",
     "hrend",
     "hrstart",
@@ -11,7 +14,7 @@
     "snyk",
     "tsbuildinfo"
   ],
-  "gitdoc.enabled": false,
   "editor.minimap.enabled": false,
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "editor.bracketPairColorization.enabled": true
 }
