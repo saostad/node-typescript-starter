@@ -1,0 +1,10 @@
+{
+  "name": "package-json-for-pkg-compile",
+  "version": "1.0.0",
+  "description": "package-json-for-pkg-compile",
+  "type": "module",
+  "main": "dist-cjs/index.js",
+  "bin": "../../dist-cjs/index.js",
+  "author": "Saeid Ostad",
+  "license": "MIT"
+}

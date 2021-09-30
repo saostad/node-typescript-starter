@@ -1,9 +1,10 @@
 .npmrc
 .env
 *.log
+*.exe
 docs
 generated
 /src/**/*.*
-/compile/**
+./compile/**/*.*
 /obfuscated/**/*.*
 /release/**/*.*
