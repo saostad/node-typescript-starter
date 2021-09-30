@@ -1,184 +1,101 @@
-<!doctype html>
-<html class="default no-js">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>create-ts-starter</title>
-	<meta name="description" content="Documentation for create-ts-starter">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
-	<script async src="assets/js/search.js" id="search-script"></script>
-</head>
-<body>
-<header>
-	<div class="tsd-page-toolbar">
-		<div class="container">
-			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
-					<div class="field">
-						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
-						<input id="tsd-search-field" type="text" />
-					</div>
-					<ul class="results">
-						<li class="state loading">Preparing search index...</li>
-						<li class="state failure">The search index is not available</li>
-					</ul>
-					<a href="index.html" class="title">create-ts-starter</a>
-				</div>
-				<div class="table-cell" id="tsd-widgets">
-					<div id="tsd-filter">
-						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
-						<div class="tsd-filter-group">
-							<div class="tsd-select" id="tsd-filter-visibility">
-								<span class="tsd-select-label">All</span>
-								<ul class="tsd-select-list">
-									<li data-value="public">Public</li>
-									<li data-value="protected">Public/Protected</li>
-									<li data-value="private" class="selected">All</li>
-								</ul>
-							</div>
-							<input type="checkbox" id="tsd-filter-inherited" checked />
-							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
-							<input type="checkbox" id="tsd-filter-externals" checked />
-							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-						</div>
-					</div>
-					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tsd-page-title">
-		<div class="container">
-			<h1>create-ts-starter</h1>
-		</div>
-	</div>
-</header>
-<div class="container container-main">
-	<div class="row">
-		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#node-typescript-starter" id="node-typescript-starter" style="color: inherit; text-decoration: none;">
-					<h1>node typescript starter</h1>
-				</a>
-				<a href="#production-ready-starter-for-typescript-node-projects" id="production-ready-starter-for-typescript-node-projects" style="color: inherit; text-decoration: none;">
-					<h3>Production ready starter for typescript-node projects</h3>
-				</a>
-				<a href="#quick-start" id="quick-start" style="color: inherit; text-decoration: none;">
-					<h1>Quick Start</h1>
-				</a>
-				<p><code>npx create-ts-starter PROJECT_NAME Vscode</code></p>
-				<p><img src="quick-start.gif" alt=""></p>
-				<a href="#functionalities" id="functionalities" style="color: inherit; text-decoration: none;">
-					<h2>Functionalities</h2>
-				</a>
-				<ul>
-					<li>create ESM and CommonJS modules and publish to npm registry.</li>
-					<li>configured to support top-level-await (look at Caveat section).</li>
-					<li>scan for vulnerabilities before publishing to registry.</li>
-					<li>auto tag the git commit at publish time.</li>
-					<li>generate changelog.md file after each publishes.</li>
-					<li>run tests with jest.</li>
-					<li>load environment variables from .env file.</li>
-					<li>load credentials from host operation system&#39;s credential manger.</li>
-					<li>ready to run in a docker environment.</li>
-					<li>write logs in .log file in the logs directory with customizable log rotation policy.</li>
-					<li>generate API documentation in docs folder of the root project directory.</li>
-					<li>compile the app to an executable single file.</li>
-					<li>restart the process after modifying ts files.</li>
-					<li>dies at unhandled errors (this is a very good strategy for production - docker will take care of restart the program after exit).</li>
-					<li>type-def for process.env variables.</li>
-					<li>recommends useful <a href="https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions">vscode extensions</a>.</li>
-				</ul>
-				<a href="#notice" id="notice" style="color: inherit; text-decoration: none;">
-					<h3>Notice:</h3>
-				</a>
-				<ul>
-					<li>If you don&#39;t want to open the project folder in VSCode, You can ignore the &#39;VSCode&#39; parameter.</li>
-					<li>minimap is disabled by default.</li>
-					<li>workbench sidebar is in right side of screen.</li>
-				</ul>
-				<a href="#commands" id="commands" style="color: inherit; text-decoration: none;">
-					<h2>Commands</h2>
-				</a>
-				<ul>
-					<li><code>npm start</code> to start the development environment</li>
-					<li><code>npm run compile</code> to compile to single executable file</li>
-					<li><code>npm run prod</code> to run in production</li>
-					<li><code>npm run test</code> to run tests</li>
-					<li><code>npm run test:watch</code> to run tests in watch mode</li>
-					<li><code>npm run format</code> to format with prettier</li>
-					<li><code>npm run lint</code> to lint with eslint</li>
-					<li><code>npm run gen-docs</code> to generate documentations website</li>
-					<li><code>npm run vulnerability-scan</code> to scan for vulnerabilities</li>
-					<li><code>npm run docker:build</code> to create docker image with data from <code>.env</code> file and version # from <code>package.json</code></li>
-					<li><code>docker-compose up</code> to run in docker environment</li>
-				</ul>
-				<a href="#powered-by-credit" id="powered-by-credit" style="color: inherit; text-decoration: none;">
-					<h2>Powered By (Credit):</h2>
-				</a>
-				<ul>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/Microsoft/TypeScript">typescript</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/saostad/fast-node-logger">fast-node-logger</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/facebook/jest">jest</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/eslint/eslint">eslint</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/pkg">pkg</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/snyk">snyk</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/keytar">keytar</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/prettier/prettier">prettier</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/TypeStrong/TypeDoc">TypeDoc</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/auto-changelog">auto-changelog</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/mysticatea/npm-run-all">npm-run-all</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/remy/nodemon">nodemon</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/colors">colors</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.docker.com/">Docker</a></li>
-					<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/wait-on">wait-on</a></li>
-				</ul>
-				<a href="#todo" id="todo" style="color: inherit; text-decoration: none;">
-					<h2>TODO:</h2>
-				</a>
-				<ul>
-					<li><input disabled="" type="checkbox"> improve error handling <a href="https://www.youtube.com/watch?v=62ZRPJkHOX0&amp;list=WL&amp;index=10&amp;t=0s">best practices</a></li>
-					<li><input disabled="" type="checkbox"> <a href="https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4">docker best practices</a></li>
-					<li><input disabled="" type="checkbox"> add entry for other builds (e.g. <a href="https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c?s=03">esm</a>, browser, ...)</li>
-					<li><input disabled="" type="checkbox"> fix failures when git is not installed on the host system.</li>
-					<li><input disabled="" type="checkbox"> add templates to based on type of project that user wants to create, generate different projects (<a href="https://github.com/evanw/esbuild">esbuild</a> for projects without decorators, tsc compiler, ...)</li>
-					<li><input disabled="" type="checkbox"> add please wait... in initial of the process</li>
-				</ul>
-				<a href="#caveat" id="caveat" style="color: inherit; text-decoration: none;">
-					<h2>Caveat</h2>
-				</a>
-				<ul>
-					<li>top level await <a href="https://github.com/vercel/pkg/issues/997">is not supported</a> when compiling the single executable file.</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class=" ">
-						<a href="modules.html">Exports</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation secondary menu-sticky">
-				<ul class="before-current">
-				</ul>
-			</nav>
-		</div>
-	</div>
-</div>
-<footer class="with-border-bottom">
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-		</div>
-	</div>
-</footer>
-<div class="container tsd-generator">
-	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
-</div>
-<div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html class="default no-js"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>create-ts-starter</title><meta name="description" content="Documentation for create-ts-starter"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">create-ts-starter</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1> create-ts-starter</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#node-typescript-starter" id="node-typescript-starter" style="color: inherit; text-decoration: none;">
+  <h1>node typescript starter</h1>
+</a>
+
+<a href="#production-ready-starter-for-typescript-node-projects" id="production-ready-starter-for-typescript-node-projects" style="color: inherit; text-decoration: none;">
+  <h3>Production ready starter for typescript-node projects</h3>
+</a>
+
+<a href="#quick-start" id="quick-start" style="color: inherit; text-decoration: none;">
+  <h1>Quick Start</h1>
+</a>
+<p><code>npx create-ts-starter PROJECT_NAME Vscode</code></p>
+<p><img src="quick-start.gif" alt=""></p>
+
+<a href="#functionalities" id="functionalities" style="color: inherit; text-decoration: none;">
+  <h2>Functionalities</h2>
+</a>
+<ul>
+<li>create ESM and CommonJS modules and publish to npm registry.</li>
+<li>configured to support top-level-await (look at Caveat section).</li>
+<li>scan for vulnerabilities via <a href="https://marketplace.visualstudio.com/items?itemName=HCLTechnologies.hclappscancodesweep">HCL AppScan CodeSweep</a> in vscode IDE.</li>
+<li>auto tag the git commit at publish time.</li>
+<li>generate changelog.md file after each publishes.</li>
+<li>run tests with jest.</li>
+<li>load environment variables from .env file.</li>
+<li>load credentials from host operation system&#39;s credential manger.</li>
+<li>ready to run in a docker environment.</li>
+<li>write logs in .log file in the logs directory with customizable log rotation policy.</li>
+<li>generate API documentation in docs folder of the root project directory.</li>
+<li>compile the app to an executable single file.</li>
+<li>restart the process after modifying ts files.</li>
+<li>dies at unhandled errors (this is a very good strategy for production - docker will take care of restart the program after exit).</li>
+<li>type-def for process.env variables.</li>
+<li>recommends useful <a href="https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions">vscode extensions</a>.</li>
+</ul>
+
+<a href="#notice" id="notice" style="color: inherit; text-decoration: none;">
+  <h3>Notice:</h3>
+</a>
+<ul>
+<li>If you don&#39;t want to open the project folder in VSCode, You can ignore the &#39;VSCode&#39; parameter.</li>
+<li>minimap is disabled by default.</li>
+<li>workbench sidebar is in right side of screen.</li>
+</ul>
+
+<a href="#commands" id="commands" style="color: inherit; text-decoration: none;">
+  <h2>Commands</h2>
+</a>
+<ul>
+<li><code>npm start</code> to start the development environment</li>
+<li><code>npm run compile</code> to compile to single executable file</li>
+<li><code>npm run prod</code> to run in production</li>
+<li><code>npm run test</code> to run tests</li>
+<li><code>npm run test:watch</code> to run tests in watch mode</li>
+<li><code>npm run format</code> to format with prettier</li>
+<li><code>npm run lint</code> to lint with eslint</li>
+<li><code>npm run gen-docs</code> to generate documentations website</li>
+<li><code>npm run docker:build</code> to create docker image with data from <code>.env</code> file and version # from <code>package.json</code></li>
+<li><code>docker-compose up</code> to run in docker environment</li>
+</ul>
+
+<a href="#powered-by-credit" id="powered-by-credit" style="color: inherit; text-decoration: none;">
+  <h2>Powered By (Credit):</h2>
+</a>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/Microsoft/TypeScript">typescript</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/saostad/fast-node-logger">fast-node-logger</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/facebook/jest">jest</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/eslint/eslint">eslint</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/pkg">pkg</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/keytar">keytar</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/prettier/prettier">prettier</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/TypeStrong/TypeDoc">TypeDoc</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/auto-changelog">auto-changelog</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/mysticatea/npm-run-all">npm-run-all</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://github.com/remy/nodemon">nodemon</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/colors">colors</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://www.docker.com/">Docker</a></li>
+<li><input checked="" disabled="" type="checkbox"> <a href="https://www.npmjs.com/package/wait-on">wait-on</a></li>
+</ul>
+
+<a href="#todo" id="todo" style="color: inherit; text-decoration: none;">
+  <h2>TODO:</h2>
+</a>
+<ul>
+<li><input disabled="" type="checkbox"> improve error handling <a href="https://www.youtube.com/watch?v=62ZRPJkHOX0&amp;list=WL&amp;index=10&amp;t=0s">best practices</a></li>
+<li><input disabled="" type="checkbox"> <a href="https://dev.to/nodepractices/docker-best-practices-with-node-js-4ln4">docker best practices</a></li>
+<li><input disabled="" type="checkbox"> add entry for other builds (e.g. <a href="https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c?s=03">esm</a>, browser, ...)</li>
+<li><input disabled="" type="checkbox"> fix failures when git is not installed on the host system.</li>
+<li><input disabled="" type="checkbox"> add templates to based on type of project that user wants to create, generate different projects (<a href="https://github.com/evanw/esbuild">esbuild</a> for projects without decorators, tsc compiler, ...)</li>
+<li><input disabled="" type="checkbox"> add please wait... in initial of the process</li>
+</ul>
+
+<a href="#caveat" id="caveat" style="color: inherit; text-decoration: none;">
+  <h2>Caveat</h2>
+</a>
+<ul>
+<li>top level await <a href="https://github.com/vercel/pkg/issues/997">is not supported</a> when compiling the single executable file.</li>
+</ul>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>

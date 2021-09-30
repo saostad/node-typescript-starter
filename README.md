@@ -12,7 +12,7 @@
 
 - create ESM and CommonJS modules and publish to npm registry.
 - configured to support top-level-await (look at Caveat section).
-- scan for vulnerabilities before publishing to registry.
+- scan for vulnerabilities via [HCL AppScan CodeSweep](https://marketplace.visualstudio.com/items?itemName=HCLTechnologies.hclappscancodesweep) in vscode IDE.
 - auto tag the git commit at publish time.
 - generate changelog.md file after each publishes.
 - run tests with jest.
@@ -43,7 +43,6 @@
 - `npm run format` to format with prettier
 - `npm run lint` to lint with eslint
 - `npm run gen-docs` to generate documentations website
-- `npm run vulnerability-scan` to scan for vulnerabilities
 - `npm run docker:build` to create docker image with data from `.env` file and version # from `package.json`
 - `docker-compose up` to run in docker environment
 
@@ -54,7 +53,6 @@
 - [x] [jest](https://github.com/facebook/jest)
 - [x] [eslint](https://github.com/eslint/eslint)
 - [x] [pkg](https://www.npmjs.com/package/pkg)
-- [x] [snyk](https://www.npmjs.com/package/snyk)
 - [x] [keytar](https://www.npmjs.com/package/keytar)
 - [x] [prettier](https://github.com/prettier/prettier)
 - [x] [TypeDoc](https://github.com/TypeStrong/TypeDoc)
