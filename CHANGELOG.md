@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v4.4.7](https://github.com/saostad/node-typescript-starter/compare/v4.4.6...v4.4.7)
+
+> 30 September 2021
+
+- pkg: due to uncampatibility snyk removed [`d3a9a16`](https://github.com/saostad/node-typescript-starter/commit/d3a9a166fc90845e235bbefb3852ca0eaccf00a1)
+- doc: change-log updated. [`035c908`](https://github.com/saostad/node-typescript-starter/commit/035c9088654334642a6d94921fda1c5223c8332a)
+- feat: Built-in fast bracket colorization enabled [`74f10b4`](https://github.com/saostad/node-typescript-starter/commit/74f10b4071101debb0b3fc3169be765dc4a66e1a)
+
 #### [v4.4.6](https://github.com/saostad/node-typescript-starter/compare/v4.4.5...v4.4.6)
 
 > 1 September 2021
