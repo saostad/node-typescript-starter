@@ -41,4 +41,7 @@ if (process.env.NODE_ENV) {
       stdout: true,
     });
   });
-})();
+})().catch((err) => {
+  console.error(err);
+  writeLog([err], { stdout: true, level: "error" });
+});
