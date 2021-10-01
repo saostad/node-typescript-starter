@@ -12,7 +12,7 @@ process.on("beforeExit", (code) => {
     level: "info",
     stdout: true,
   });
-  writeLog(`exiting by code ${code}!`);
+  writeLog(`exiting by code ${code}.`);
 });
 
 /** load process.env variables from .env file */
@@ -42,6 +42,5 @@ if (process.env.NODE_ENV) {
     });
   });
 })().catch((err) => {
-  console.error(err);
   writeLog([err], { stdout: true, level: "error" });
 });
