@@ -16,7 +16,12 @@ process.on("beforeExit", (code) => {
 });
 
 /** load process.env variables from .env file */
-loadEnvVars();
+const loadEnvResult = loadEnvVars();
+if (loadEnvResult.error) {
+  throw new Error(
+    `can't load the environment variables! ${loadEnvResult.error}`,
+  );
+}
 
 /** server mode base on process.env.NODE_ENV */
 let nodeMode: NodeMode = process.env.NODE_ENV || "production";
