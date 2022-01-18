@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "4.4.8",
+  "version": "4.4.9",
   "description": "Production ready starter for typescript node project",
   "type": "module",
   "repository": {
@@ -92,7 +92,7 @@
     "wait-on": "^6.0.0"
   },
   "dependencies": {
-    "dotenv": "^10.0.0",
+    "dotenv": "^14.2.0",
     "fast-node-logger": "^2.0.0",
     "keytar": "^7.7.0"
   }
