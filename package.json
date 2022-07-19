@@ -1,6 +1,6 @@
 {
   "name": "create-ts-starter",
-  "version": "4.4.9",
+  "version": "5.0.0",
   "description": "Production ready starter for typescript node project",
   "type": "module",
   "repository": {
@@ -15,7 +15,7 @@
     "require": "./dist-cjs/index.js"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "scripts": {
     "format": "prettier --check \"src/**/*.ts\" --write",
@@ -93,7 +93,7 @@
   },
   "dependencies": {
     "dotenv": "^14.2.0",
-    "fast-node-logger": "^2.0.0",
+    "fast-node-logger": "^3.0.0-beta04",
     "keytar": "^7.7.0"
   }
 }

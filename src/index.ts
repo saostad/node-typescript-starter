@@ -8,11 +8,8 @@ const hrstart = process.hrtime();
 
 process.on("beforeExit", (code) => {
   const hrend = process.hrtime(hrstart);
-  writeLog(`Execution time ${hrend[0]}s ${hrend[1] / 1000000}ms`, {
-    level: "info",
-    stdout: true,
-  });
-  writeLog(`exiting by code ${code}.`);
+  console.log(`Execution time ${hrend[0]}s ${hrend[1] / 1000000}ms`);
+  console.log(`exiting by code ${code}.`);
 });
 
 /** load process.env variables from .env file */
@@ -32,7 +29,6 @@ if (process.env.NODE_ENV) {
 
 (async () => {
   const logger = await createLoggerInstance(nodeMode);
-
   /**@note put your code below here */
 
   /**
