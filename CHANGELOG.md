@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
+#### [v5.0.1](https://github.com/saostad/node-typescript-starter/compare/v5.0.0...v5.0.1)
+
+> 20 July 2022
+
+- pkg: updated [`9feaa96`](https://github.com/saostad/node-typescript-starter/commit/9feaa96b4de6d0edb4305c6025b9b0c70a9cab1f)
+- doc: change-log updated. [`b92b925`](https://github.com/saostad/node-typescript-starter/commit/b92b9255e4c842a88beb156d41502ae2adcceadf)
+- enhance: removed some extensions from worksapce recommendation [`71b999c`](https://github.com/saostad/node-typescript-starter/commit/71b999c7148661779562e69e654c379ee5cb01a5)
+
 ### [v5.0.0](https://github.com/saostad/node-typescript-starter/compare/v4.4.9...v5.0.0)
 
 > 19 July 2022
