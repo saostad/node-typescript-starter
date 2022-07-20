@@ -6,10 +6,7 @@
   "recommendations": [
     "wmaurer.change-case",
     "streetsidesoftware.code-spell-checker",
-    "randomfractalsinc.vscode-data-preview",
     "dbaeumer.vscode-eslint",
-    "waderyan.gitblame",
-    "vincaslt.highlight-matching-tag",
     "esbenp.prettier-vscode",
     "meganrogge.template-string-converter",
     "gruntfuggly.todo-tree",
