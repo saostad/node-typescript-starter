@@ -30,18 +30,6 @@ if (process.env.NODE_ENV) {
 (async () => {
   const logger = await createLoggerInstance(nodeMode);
   /**@note put your code below here */
-
-  /**
-   * @BEST_PRACTICES how to store credential out of source code
-   * - use operating system credential manager
-   * - use .env file located in project root directory
-   */
-  getCredential("test_cred").then(({ account, password }) => {
-    writeLog(`loaded credential: ${account}, ${password}`, {
-      level: "warn",
-      stdout: true,
-    });
-  });
 })().catch((err) => {
   writeLog([err], { stdout: true, level: "error" });
 });
